@@ -1,7 +1,7 @@
 import { Product } from '../types';
 
 // Absolute image paths pointing to the premium assets generated
-export const HERO_IMAGE = '/src/assets/images/luxury_perfume_hero_1783495875458.jpg';
+export const HERO_IMAGE = '/assets/images/luxury_perfume_hero_1783495875458.jpg';
 
 export const products: Product[] = [
   {
@@ -10,7 +10,7 @@ export const products: Product[] = [
     collection: 'men',
     price: 3850,
     originalPrice: 4800,
-    image: '/src/assets/images/perfume_white_oud_1783495892449.jpg',
+    image: '/assets/images/perfume_white_oud_1783495892449.jpg',
     shortDescription: 'An ultra-refined, smooth, and powdery interpretation of precious agarwood.',
     description: 'White Oud represents the pinnacle of subtle sophistication. Far from the harshness of traditional heavy ouds, this fragrance introduces a creamy, powdery, and highly sophisticated agarwood experience. Wrapped in white pepper, precious rosewood, and warm amber, it creates a lingering, elite aura that commands respect in any setting. Perfect for executive wear and evening engagements.',
     notes: {
@@ -37,7 +37,7 @@ export const products: Product[] = [
     collection: 'men',
     price: 3450,
     originalPrice: 4200,
-    image: '/src/assets/images/perfume_majnu_1783495911302.jpg',
+    image: '/assets/images/perfume_majnu_1783495911302.jpg',
     shortDescription: 'A passionate, deep, smoky amber with rich undertones of raw leather and pink pepper.',
     description: 'Majnu is a scent of devotion, mystery, and raw confidence. Named after the legendary lover, this fragrance blends intense dark leather with vibrant pink pepper and rich patchouli. It is smoky, resinous, and deeply passionate, drying down to an amber-infused musk that clings elegantly to the skin. Made for the bold, charismatic man who leaves an unforgettable impression.',
     notes: {
@@ -62,7 +62,7 @@ export const products: Product[] = [
     collection: 'men',
     price: 3950,
     originalPrice: 4950,
-    image: '/src/assets/images/perfume_sultan_1783495969643.jpg',
+    image: '/assets/images/perfume_sultan_1783495969643.jpg',
     shortDescription: 'A majestic, royal blend of precious saffron, spices, and deep golden agarwood.',
     description: 'Sultan is a fragrance of royalty, absolute power, and grandeur. It opens with an opulent burst of saffron, cardamom, and fresh nutmeg, melting into a deep heart of dark rose and precious jasmine. The dry down is a powerful presence of pure agarwood, royal amber, and soft Tuscan leather. A heavy, magnificent fragrance crafted for grand occasions.',
     notes: {
@@ -88,7 +88,7 @@ export const products: Product[] = [
     collection: 'women',
     price: 3450,
     originalPrice: 4200,
-    image: '/src/assets/images/perfume_laila_1783495931947.jpg',
+    image: '/assets/images/perfume_laila_1783495931947.jpg',
     shortDescription: 'A dreamy, delicate bouquet of romantic roses, fresh peonies, and soft white musk.',
     description: 'Laila is the essence of delicate elegance and romantic dreams. It opens with a sparkling burst of fresh rose petals, soft pink peonies, and bright mandarin orange. The heart reveals juicy apricots and peaches blended with night-blooming jasmine, settling into a powdery cloud of luxurious white musk and creamy sandalwood. Elegant, soft, and beautifully feminine.',
     notes: {
@@ -114,7 +114,7 @@ export const products: Product[] = [
     collection: 'women',
     price: 3650,
     originalPrice: 4500,
-    image: '/src/assets/images/perfume_darshi_1783496010506.jpg',
+    image: '/assets/images/perfume_darshi_1783496010506.jpg',
     shortDescription: 'A seductive, gourmand embrace of rich vanilla, sweet caramel, and creamy coconut.',
     description: 'Darshi is a captivating gourmand fragrance that envelops you in sweet, warm temptation. With a luxurious opening of velvety vanilla, rich butter caramel, and coconut milk, it melts into a floral heart of ylang-ylang and exotic heliotrope. The base settles into precious benzoin resins and sandalwood, making it an irresistible, head-turning fragrance for elegant evenings.',
     notes: {
@@ -139,7 +139,7 @@ export const products: Product[] = [
     collection: 'women',
     price: 3850,
     originalPrice: 4800,
-    image: '/src/assets/images/perfume_ishq_1783495990526.jpg',
+    image: '/assets/images/perfume_ishq_1783495990526.jpg',
     shortDescription: 'An intense, hypnotic blend of dark red roses, warm spices, and seductive amberwood.',
     description: 'Ishq is an exploration of deep, passionate obsession. A powerful, hypnotic fragrance that blends opulent dark rose with warm saffron, jasmine, and exotic patchouli. It dries down to a rich, resinous amberwood, velvety vanilla, and precious resins, leaving a heavy, seductive trail that is completely irresistible. Created for the bold woman who loves deeply.',
     notes: {
@@ -165,7 +165,7 @@ export const products: Product[] = [
     collection: 'unisex',
     price: 3750,
     originalPrice: 4600,
-    image: '/src/assets/images/perfume_dream_1783495948982.jpg',
+    image: '/assets/images/perfume_dream_1783495948982.jpg',
     shortDescription: 'An ethereal, celestial ocean breeze combined with earthy sage, lavender, and cedar.',
     description: 'Dream is a universal, fluid masterpiece that transcends boundaries. Evoking a high-altitude sea breeze drifting over rugged cedar cliffs, it starts with fresh Calabrian bergamot, sea salt, and aromatic sage. The heart introduces calming lavender, ambrette seeds, and clean ocean seaweed, settling into a long-lasting base of driftwood, cedarwood, and clean musk. Truly a dream of clean sophistication.',
     notes: {
@@ -191,7 +191,7 @@ export const products: Product[] = [
     collection: 'unisex',
     price: 3950,
     originalPrice: 4900,
-    image: '/src/assets/images/perfume_izhaar_1783498426271.jpg',
+    image: '/assets/images/perfume_izhaar_1783498426271.jpg',
     shortDescription: 'Zarbadshah presents Izhaar: Unspoken Emotions. An intimate, deep, and utterly seductive blend of spices, precious saffron, black rose, and intense amberwood.',
     description: 'Izhaar is an exploration of deep emotions, unspoken thoughts, and intense romantic devotion. It opens with an intimate burst of warm cardamom, pink pepper, and wild bergamot. The heart unfolds a majestic blend of dark red roses, saffron, and rich night jasmine, leading into a highly sensual and lingering base of precious amberwood, warm musk, patchouli, and sandalwood. Truly a captivating scent that expresses what words cannot.',
     notes: {
