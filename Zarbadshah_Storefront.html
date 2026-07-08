@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarbadshah Perfumes | Royal Standalone Storefront</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Cinzel', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        gold: {
+                            50: '#fefdf0',
+                            100: '#fcf7d1',
+                            200: '#f7ed9f',
+                            300: '#f0dc62',
+                            400: '#e4c433',
+                            500: '#d4af15',
+                            600: '#b88d0e',
+                            700: '#93690e',
+                            800: '#795311',
+                            900: '#684513',
+                            950: '#3c2306',
+                        },
+                        obsidian: {
+                            900: '#0a0a0a',
+                            950: '#050505',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #f3f4f6;
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d4af15;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b88d0e;
+        }
+        .text-glow {
+            text-shadow: 0 0 10px rgba(212, 175, 21, 0.3);
+        }
+        .border-glow {
+            box-shadow: 0 0 15px rgba(212, 175, 21, 0.15);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-gold-500 selection:text-black">
+
+    <!-- Top Banner Alert -->
+    <div class="bg-gradient-to-r from-gold-900 via-gold-700 to-gold-900 text-black py-2 px-4 text-center text-[11px] font-bold tracking-[0.2em] uppercase z-50 relative">
+        ✨ Pure Extrait De Parfum • Hand-Crafted Elite Blends • Delivery Across Pakistan • Free Shipping Over Rs. 5,000 ✨
+    </div>
+
+    <!-- Sticky Navigation -->
+    <header class="sticky top-0 bg-black/90 backdrop-blur-md border-b border-gold-500/10 z-40 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Branding -->
+                <a href="#" class="flex items-center gap-3 select-none group">
+                    <svg class="h-10 w-10 fill-gold-400 group-hover:scale-105 transition-all duration-300" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="gold-gradient-html-nav" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#f7ed9f" />
+                                <stop offset="50%" stop-color="#d4af15" />
+                                <stop offset="100%" stop-color="#795311" />
+                            </linearGradient>
+                        </defs>
+                        <g fill="url(#gold-gradient-html-nav)">
+                            <path d="M228 152 C226 148, 232 140, 236 142 C242 144, 240 156, 234 156 C231 156, 229 154, 228 152 Z" />
+                            <path d="M214 180 C208 172, 218 164, 226 168 C238 174, 232 192, 220 188 C217 186, 215 183, 214 180 Z" />
+                            <path d="M192 198 C198 186, 212 178, 222 188 C232 198, 218 214, 204 208 C198 205, 194 201, 192 198 Z" />
+                            <path d="M174 240 C170 230, 182 222, 192 228 C204 236, 196 254, 184 250 C178 248, 175 244, 174 240 Z" />
+                            <path d="M280 160 C272 130, 292 110, 305 130 C318 150, 295 180, 285 170 C282 167, 281 163, 280 160 Z" />
+                            <path d="M276 166 C290 172, 302 184, 308 198 C314 212, 310 228, 300 238 C290 248, 274 250, 262 244 C250 238, 244 224, 250 212 C256 200, 272 194, 284 200 C292 204, 294 212, 290 218 C286 224, 276 226, 270 220" />
+                            <path d="M220 280 C210 270, 224 250, 235 255 C246 260, 240 280, 228 282 M238 275 C230 265, 244 248, 252 252 C260 256, 256 274, 245 276 M252 270 C244 260, 258 244, 266 248 C274 252, 270 270, 259 271" />
+                            <path d="M232 232 C230 228, 236 222, 239 224 C243 226, 241 234, 236 234 C234 234, 233 233, 232 232 Z" />
+                            <path d="M246 230 C244 226, 250 220, 253 222 C257 224, 255 232, 250 232 C248 232, 247 231, 246 230 Z" />
+                            <path d="M239 218 C237 214, 243 208, 246 210 C250 212, 248 220, 243 220 C241 220, 240 219, 239 218 Z" />
+                            <path d="M285 240 C275 235, 270 248, 275 255 C282 265, 295 255, 290 245 C289 242, 287 241, 285 240 Z" />
+                            <path d="M295 250 C285 248, 282 262, 290 268 C298 274, 305 260, 300 252 C298 249, 296 249, 295 250 Z" />
+                            <path d="M178 280 C182 310, 210 338, 250 338 C290 338, 325 310, 325 272 C325 245, 305 220, 285 220 C265 220, 252 235, 252 250 C252 265, 268 280, 288 280 C308 280, 314 260, 314 250 C314 275, 290 315, 250 315 C210 315, 194 285, 192 265 C190 245, 202 225, 218 215 C228 208, 230 198, 220 200 C202 205, 182 228, 178 250 C175 260, 176 270, 178 280 Z" />
+                            <path d="M165 210 C160 210, 155 240, 158 270 C160 300, 170 320, 175 320 C180 320, 175 290, 172 260 C170 230, 170 210, 165 210 Z" />
+                            <path d="M312 280 C318 280, 335 278, 345 285 C355 292, 348 305, 332 305 C315 305, 305 292, 312 280 Z" />
+                            <path d="M260 140 L285 125 C288 123, 292 127, 290 130 L265 145 C262 147, 258 143, 260 140 Z" />
+                            <path d="M195 160 C190 155, 198 145, 204 150 C210 155, 202 168, 196 168 C194 168, 192 165, 195 160 Z" />
+                            <path d="M152 245 C148 240, 155 232, 160 235 C165 238, 160 250, 154 250 C152 250, 151 248, 152 245 Z" />
+                            <path d="M328 215 C326 210, 332 204, 335 206 C338 208, 336 218, 331 218 C329 218, 328 217, 328 215 Z" />
+                            <path d="M210 325 C208 322, 214 316, 217 318 L223 325 L229 318 C232 316, 238 322, 236 325 L226 335 C224 337, 222 337, 220 335 Z" />
+                            <path d="M276 320 C274 317, 280 311, 283 313 L289 320 L295 313 C298 311, 304 317, 302 320 L292 330 C290 332, 288 332, 286 330 Z" />
+                        </g>
+                    </svg>
+                    <div class="flex flex-col items-start">
+                        <span class="font-display text-lg sm:text-xl font-bold tracking-[0.25em] text-white leading-none">ZARBADSHAH</span>
+                        <span class="text-[7.5px] tracking-[0.3em] text-gold-400 font-sans uppercase mt-1 font-medium">The Scent of Royalty</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-xs font-bold uppercase tracking-[0.2em] text-white hover:text-gold-400 transition-colors">Home</a>
+                    <a href="#campaigns-section" class="text-xs font-bold uppercase tracking-[0.2em] text-gray-400 hover:text-gold-400 transition-colors">Campaigns</a>
+                    <a href="#shop-section" class="text-xs font-bold uppercase tracking-[0.2em] text-gray-400 hover:text-gold-400 transition-colors">The Collection</a>
+                    <a href="#why-section" class="text-xs font-bold uppercase tracking-[0.2em] text-gray-400 hover:text-gold-400 transition-colors">Our Story</a>
+                    <a href="#reviews-section" class="text-xs font-bold uppercase tracking-[0.2em] text-gray-400 hover:text-gold-400 transition-colors">Reviews</a>
+                </nav>
+
+                <!-- Actions (Wishlist, Cart) -->
+                <div class="flex items-center space-x-5">
+                    <!-- Wishlist Trigger -->
+                    <button onclick="toggleWishlistModal()" class="relative text-gray-300 hover:text-gold-400 transition-colors py-2 cursor-pointer" title="Wishlist">
+                        <i class="fa-regular fa-heart text-lg"></i>
+                        <span id="wishlist-badge" class="absolute -top-1 -right-2 bg-gold-500 text-black text-[9px] font-bold w-4 h-4 flex items-center justify-center rounded-full hidden">0</span>
+                    </button>
+
+                    <!-- Cart Trigger -->
+                    <button onclick="toggleCart(true)" class="relative text-gray-300 hover:text-gold-400 transition-colors py-2 cursor-pointer flex items-center" title="Shopping Cart">
+                        <i class="fa-solid fa-bag-shopping text-lg"></i>
+                        <span id="cart-badge" class="absolute -top-1 -right-2 bg-gold-500 text-black text-[9px] font-bold w-4 h-4 flex items-center justify-center rounded-full hidden">0</span>
+                        <span id="cart-total-nav" class="hidden sm:inline ml-2.5 text-[10px] font-mono font-medium text-gold-400">Rs. 0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        
+        <!-- Hero Section -->
+        <section class="relative min-h-[85vh] flex items-center justify-center bg-black overflow-hidden py-16">
+            <!-- Background Image overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://ais-dev-aqusevpsiyjiwqpxdlgymd-406638790770.asia-southeast1.run.app/src/assets/images/luxury_perfume_hero_1783495875458.jpg" alt="Zarbadshah Hero" class="w-full h-full object-cover opacity-35">
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/80 to-black/90"></div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="relative z-10 max-w-4xl mx-auto px-4 text-center space-y-8">
+                <div class="inline-flex items-center space-x-3 border border-gold-400/30 bg-gold-400/5 px-4 py-1.5 rounded-none">
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse"></span>
+                    <span class="text-[10px] sm:text-xs font-mono tracking-[0.25em] text-gold-400 uppercase font-bold">The Scent of Imperial Prestige</span>
+                </div>
+                
+                <h1 class="text-4xl sm:text-6xl md:text-7xl font-display font-black tracking-[0.1em] text-white leading-tight">
+                    ZARBADSHAH
+                </h1>
+                
+                <p class="text-gold-400 font-display text-lg sm:text-xl md:text-2xl tracking-[0.3em] uppercase">
+                    EXTRAIT DE PARFUM
+                </p>
+                
+                <p class="text-gray-300 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto font-light font-sans">
+                    Hand-crafted in Pakistan, our precious extraits blend royal heritage with timeless French luxury. Made for individuals who command respect and leave an unforgettable signature.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                    <a href="#shop-section" class="w-full sm:w-auto px-8 py-4 bg-gold-400 hover:bg-gold-300 text-black text-xs font-bold uppercase tracking-[0.2em] rounded-none transition-all duration-300">
+                        Explore Collection
+                    </a>
+                    <button onclick="downloadStandaloneFile()" class="w-full sm:w-auto px-8 py-4 bg-transparent border border-white/20 hover:border-gold-400 hover:bg-white/5 text-white text-xs font-bold uppercase tracking-[0.2em] rounded-none transition-all duration-300">
+                        <i class="fa-solid fa-download mr-2"></i> Save This Page Offline
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Royal Campaigns Interactive Section -->
+        <section class="py-24 bg-black border-t border-gold-400/10 relative overflow-hidden" id="campaigns-section">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.02)_0,transparent_75%)] pointer-events-none"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-xl mx-auto mb-16 space-y-2">
+                    <span class="text-[10px] text-gold-400 font-bold uppercase tracking-[0.35em] block">THE SCENT OF ROYALTY</span>
+                    <h2 class="text-3xl font-display text-white font-bold tracking-wider">Royal Campaigns</h2>
+                    <div class="w-12 h-[1px] bg-gold-400 mx-auto mt-4"></div>
+                </div>
+
+                <!-- Showroom Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 bg-[#070707] border border-gold-400/15 p-6 sm:p-10 rounded-none shadow-[0_0_50px_rgba(0,0,0,0.8)]">
+                    <!-- Poster column -->
+                    <div class="lg:col-span-5 h-[450px] sm:h-[550px] relative overflow-hidden border border-gold-400/20">
+                        <div class="absolute inset-0 bg-black/40 z-10"></div>
+                        <img id="campaign-active-img" src="" alt="" class="w-full h-full object-cover opacity-90 transition-all duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10"></div>
+                        <div class="absolute top-6 left-6 z-20">
+                            <span id="campaign-active-badge" class="px-3 py-1 bg-black/80 border border-gold-400/40 text-[9px] font-bold tracking-[0.2em] text-gold-400 uppercase font-mono"></span>
+                        </div>
+                    </div>
+
+                    <!-- Narrative column -->
+                    <div class="lg:col-span-7 flex flex-col justify-between py-4 space-y-6">
+                        <div class="space-y-6">
+                            <span id="campaign-active-tagline" class="text-xs text-gold-400/80 font-mono tracking-[0.3em] uppercase block"></span>
+                            <h3 id="campaign-active-title" class="text-3xl sm:text-4xl font-display font-semibold text-white tracking-wide"></h3>
+                            <p id="campaign-active-desc" class="text-gray-300 text-sm sm:text-base leading-relaxed font-sans font-light"></p>
+
+                            <!-- Scent composition -->
+                            <div class="space-y-3 pt-4">
+                                <span class="text-[10px] text-gray-400 uppercase tracking-widest font-bold block">Key Composition Notes</span>
+                                <div id="campaign-active-notes" class="flex flex-wrap gap-2.5"></div>
+                            </div>
+                        </div>
+
+                        <!-- Actions -->
+                        <div class="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gold-400/10">
+                            <button id="campaign-active-explore-btn" class="px-8 py-4 bg-gold-400 hover:bg-gold-300 text-black text-xs font-bold uppercase tracking-[0.2em] rounded-none transition-all duration-300">
+                                Explore Scent Details
+                            </button>
+                            <button id="campaign-active-buy-btn" class="px-8 py-4 bg-transparent hover:bg-white/5 text-white border border-white/20 hover:border-gold-400/50 rounded-none text-xs font-bold uppercase tracking-[0.2em] transition-all duration-300">
+                                Order This Scent
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Campaign Selector thumbnails -->
+                <div class="mt-8 text-center">
+                    <span class="text-[10px] text-gray-500 uppercase tracking-[0.25em] mb-4 block font-semibold">Select Campaign Poster to View Stories</span>
+                    <div id="campaign-thumbnails" class="flex gap-4 overflow-x-auto pb-4 justify-start sm:justify-center scrollbar-thin scrollbar-thumb-gold-400/20"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scent Finder / Catalog -->
+        <section class="py-24 bg-[#050505] border-t border-gold-500/5" id="shop-section">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Heading -->
+                <div class="text-center max-w-xl mx-auto mb-16 space-y-2">
+                    <span class="text-[10px] text-gold-400 font-bold uppercase tracking-[0.35em] block">CURATED ROYAL FLUIDS</span>
+                    <h2 class="text-3xl font-display text-white font-bold tracking-wider">The Zarbadshah Collection</h2>
+                    <div class="w-12 h-[1px] bg-gold-400 mx-auto mt-4"></div>
+                </div>
+
+                <!-- Search & Filters Panel -->
+                <div class="bg-black border border-gold-500/10 p-6 mb-12 flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <!-- Filters Tabs -->
+                    <div class="flex flex-wrap gap-2">
+                        <button onclick="filterCollection('all')" id="tab-all" class="filter-tab px-4 py-2 text-[10px] uppercase font-bold tracking-widest bg-gold-400 text-black border border-gold-400 transition-all cursor-pointer">
+                            All Scents
+                        </button>
+                        <button onclick="filterCollection('men')" id="tab-men" class="filter-tab px-4 py-2 text-[10px] uppercase font-bold tracking-widest bg-transparent text-gray-400 border border-white/10 hover:border-gold-400/30 transition-all cursor-pointer">
+                            Royal Men
+                        </button>
+                        <button onclick="filterCollection('women')" id="tab-women" class="filter-tab px-4 py-2 text-[10px] uppercase font-bold tracking-widest bg-transparent text-gray-400 border border-white/10 hover:border-gold-400/30 transition-all cursor-pointer">
+                            Romantic Women
+                        </button>
+                        <button onclick="filterCollection('unisex')" id="tab-unisex" class="filter-tab px-4 py-2 text-[10px] uppercase font-bold tracking-widest bg-transparent text-gray-400 border border-white/10 hover:border-gold-400/30 transition-all cursor-pointer">
+                            Celestial Unisex
+                        </button>
+                    </div>
+
+                    <!-- Search Input and Sorting -->
+                    <div class="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
+                        <div class="relative flex-grow sm:w-64">
+                            <input oninput="handleSearch(this.value)" type="text" placeholder="Search perfume name or note..." class="w-full bg-neutral-900 border border-white/10 focus:border-gold-400 text-xs text-white px-4 py-3 outline-none transition-colors rounded-none placeholder-gray-500">
+                            <i class="fa-solid fa-magnifying-glass absolute right-3.5 top-3.5 text-gray-500 text-xs"></i>
+                        </div>
+
+                        <select onchange="handleSort(this.value)" class="bg-neutral-900 border border-white/10 focus:border-gold-400 text-xs text-white px-4 py-3 outline-none transition-colors rounded-none cursor-pointer">
+                            <option value="popular">Most Loved</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                            <option value="rating">Top Rated</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+            </div>
+        </section>
+
+        <!-- Interactive Promo Codes Segment -->
+        <section class="py-16 bg-neutral-950 border-t border-b border-gold-500/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-xl mx-auto mb-10 space-y-2">
+                    <span class="text-[10px] text-gold-400 font-bold uppercase tracking-[0.35em] block">EXCLUSIVE PRIVILEGES</span>
+                    <h3 class="text-2xl font-display text-white font-bold tracking-wider">Royal Promos & Perks</h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Coupon 1 -->
+                    <div class="bg-black border border-gold-400/15 p-6 text-center space-y-3 relative group overflow-hidden">
+                        <div class="absolute -right-4 -top-4 w-12 h-12 bg-gold-400/5 rotate-45 group-hover:bg-gold-400/10 transition-all"></div>
+                        <h4 class="text-lg font-display text-gold-400 font-semibold tracking-wide">10% OFF Storewide</h4>
+                        <p class="text-xs text-gray-400">Valid on all items. No minimum purchase required.</p>
+                        <div class="pt-2 flex justify-center">
+                            <button onclick="copyCoupon('ZARBADSHAH10')" class="px-4 py-2 bg-neutral-900 border border-gold-400/30 hover:border-gold-400 text-[10px] font-mono tracking-widest text-white uppercase cursor-pointer transition-all flex items-center gap-2">
+                                <span id="coupon-ZARBADSHAH10">ZARBADSHAH10</span>
+                                <i class="fa-regular fa-copy text-gold-400"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Coupon 2 -->
+                    <div class="bg-black border border-gold-400/15 p-6 text-center space-y-3 relative group overflow-hidden">
+                        <div class="absolute -right-4 -top-4 w-12 h-12 bg-gold-400/5 rotate-45 group-hover:bg-gold-400/10 transition-all"></div>
+                        <h4 class="text-lg font-display text-gold-400 font-semibold tracking-wide">20% Elite Discount</h4>
+                        <p class="text-xs text-gray-400">Save 20% on all orders above Rs. 10,000.</p>
+                        <div class="pt-2 flex justify-center">
+                            <button onclick="copyCoupon('ROYAL20')" class="px-4 py-2 bg-neutral-900 border border-gold-400/30 hover:border-gold-400 text-[10px] font-mono tracking-widest text-white uppercase cursor-pointer transition-all flex items-center gap-2">
+                                <span id="coupon-ROYAL20">ROYAL20</span>
+                                <i class="fa-regular fa-copy text-gold-400"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Coupon 3 -->
+                    <div class="bg-black border border-gold-400/15 p-6 text-center space-y-3 relative group overflow-hidden">
+                        <div class="absolute -right-4 -top-4 w-12 h-12 bg-gold-400/5 rotate-45 group-hover:bg-gold-400/10 transition-all"></div>
+                        <h4 class="text-lg font-display text-gold-400 font-semibold tracking-wide">First Order Privilege</h4>
+                        <p class="text-xs text-gray-400">Extra 5% off on your introductory checkout.</p>
+                        <div class="pt-2 flex justify-center">
+                            <button onclick="copyCoupon('WELCOME5')" class="px-4 py-2 bg-neutral-900 border border-gold-400/30 hover:border-gold-400 text-[10px] font-mono tracking-widest text-white uppercase cursor-pointer transition-all flex items-center gap-2">
+                                <span id="coupon-WELCOME5">WELCOME5</span>
+                                <i class="fa-regular fa-copy text-gold-400"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Values / Story Section -->
+        <section class="py-24 bg-black border-t border-gold-500/5" id="why-section">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="space-y-8">
+                        <div class="space-y-2">
+                            <span class="text-[10px] text-gold-400 font-bold uppercase tracking-[0.35em] block">EMPEROR'S STANDARDS</span>
+                            <h2 class="text-4xl font-display text-white font-bold tracking-wide">The House of Zarbadshah</h2>
+                            <div class="w-12 h-[1px] bg-gold-400 mt-4"></div>
+                        </div>
+                        <p class="text-gray-300 font-light leading-relaxed text-sm sm:text-base">
+                            Established to redefine modern perfumery in Pakistan, **Zarbadshah** merges deep-rooted Eastern olfactory art with sophisticated Western science. Our extracts are hand-filled, containing the highest-grade raw materials sourced globally from Grasse, France to the deep agarwood reserves of Southeast Asia.
+                        </p>
+                        <p class="text-gray-300 font-light leading-relaxed text-sm sm:text-base">
+                            We believe that a fragrance is a powerful form of identity. It tells a story before you speak, and lingers long after you have departed.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-8 pt-4">
+                            <div class="space-y-2">
+                                <span class="text-xl font-display text-gold-400 font-bold">35% +</span>
+                                <p class="text-xs text-gray-400 uppercase tracking-widest">Fragrance Oil Concentration</p>
+                            </div>
+                            <div class="space-y-2">
+                                <span class="text-xl font-display text-gold-400 font-bold">12 Hours+</span>
+                                <p class="text-xs text-gray-400 uppercase tracking-widest">Guaranteed Longevity</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Decorative image panel -->
+                    <div class="h-[400px] sm:h-[500px] relative border border-gold-400/20">
+                        <div class="absolute inset-0 bg-black/30 z-10"></div>
+                        <img src="https://ais-dev-aqusevpsiyjiwqpxdlgymd-406638790770.asia-southeast1.run.app/src/assets/images/perfume_white_oud_1783495892449.jpg" alt="Artisan filling" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial / Social proof section -->
+        <section class="py-24 bg-neutral-950 border-t border-gold-500/5" id="reviews-section">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-xl mx-auto mb-16 space-y-2">
+                    <span class="text-[10px] text-gold-400 font-bold uppercase tracking-[0.35em] block">SINCERE DEVOTION</span>
+                    <h2 class="text-3xl font-display text-white font-bold tracking-wider">Royal Endorsements</h2>
+                    <div class="w-12 h-[1px] bg-gold-400 mx-auto mt-4"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Review 1 -->
+                    <div class="bg-black border border-gold-400/10 p-8 space-y-4">
+                        <div class="flex text-gold-400 text-xs space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed italic">
+                            "Hands down the best oud fragrance in Pakistan! Highly long-lasting, easily stays 10+ hours on clothes. People kept asking me which brand this is."
+                        </p>
+                        <div>
+                            <p class="text-xs text-white font-bold font-display tracking-widest">MUHAMMAD ALI</p>
+                            <p class="text-[9px] text-gray-500 uppercase tracking-widest">Verified Royal Buyer</p>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="bg-black border border-gold-400/10 p-8 space-y-4">
+                        <div class="flex text-gold-400 text-xs space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed italic">
+                            "If you love sweet, vanilla-caramel fragrances, Darshi is an absolute must-have! It smells so rich, edible, and high-end. Extremely long lasting."
+                        </p>
+                        <div>
+                            <p class="text-xs text-white font-bold font-display tracking-widest">NIDA FATIMA</p>
+                            <p class="text-[9px] text-gray-500 uppercase tracking-widest">Verified Royal Buyer</p>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="bg-black border border-gold-400/10 p-8 space-y-4">
+                        <div class="flex text-gold-400 text-xs space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed italic">
+                            "Zarbadshah has truly set a benchmark. The packaging, atomizers, and presentation feel like a high-end French luxury house. Incredible value!"
+                        </p>
+                        <div>
+                            <p class="text-xs text-white font-bold font-display tracking-widest">HARIS QURESHI</p>
+                            <p class="text-[9px] text-gray-500 uppercase tracking-widest">Verified Royal Buyer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gold-400/10 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+            <div class="flex flex-col items-center space-y-3">
+                <svg class="h-16 w-16 fill-gold-400" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="gold-gradient-html-foot" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#f7ed9f" />
+                            <stop offset="50%" stop-color="#d4af15" />
+                            <stop offset="100%" stop-color="#795311" />
+                        </linearGradient>
+                    </defs>
+                    <g fill="url(#gold-gradient-html-foot)">
+                        <path d="M228 152 C226 148, 232 140, 236 142 C242 144, 240 156, 234 156 C231 156, 229 154, 228 152 Z" />
+                        <path d="M214 180 C208 172, 218 164, 226 168 C238 174, 232 192, 220 188 C217 186, 215 183, 214 180 Z" />
+                        <path d="M192 198 C198 186, 212 178, 222 188 C232 198, 218 214, 204 208 C198 205, 194 201, 192 198 Z" />
+                        <path d="M174 240 C170 230, 182 222, 192 228 C204 236, 196 254, 184 250 C178 248, 175 244, 174 240 Z" />
+                        <path d="M280 160 C272 130, 292 110, 305 130 C318 150, 295 180, 285 170 C282 167, 281 163, 280 160 Z" />
+                        <path d="M276 166 C290 172, 302 184, 308 198 C314 212, 310 228, 300 238 C290 248, 274 250, 262 244 C250 238, 244 224, 250 212 C256 200, 272 194, 284 200 C292 204, 294 212, 290 218 C286 224, 276 226, 270 220" />
+                        <path d="M220 280 C210 270, 224 250, 235 255 C246 260, 240 280, 228 282 M238 275 C230 265, 244 248, 252 252 C260 256, 256 274, 245 276 M252 270 C244 260, 258 244, 266 248 C274 252, 270 270, 259 271" />
+                        <path d="M232 232 C230 228, 236 222, 239 224 C243 226, 241 234, 236 234 C234 234, 233 233, 232 232 Z" />
+                        <path d="M246 230 C244 226, 250 220, 253 222 C257 224, 255 232, 250 232 C248 232, 247 231, 246 230 Z" />
+                        <path d="M239 218 C237 214, 243 208, 246 210 C250 212, 248 220, 243 220 C241 220, 240 219, 239 218 Z" />
+                        <path d="M285 240 C275 235, 270 248, 275 255 C282 265, 295 255, 290 245 C289 242, 287 241, 285 240 Z" />
+                        <path d="M295 250 C285 248, 282 262, 290 268 C298 274, 305 260, 300 252 C298 249, 296 249, 295 250 Z" />
+                        <path d="M178 280 C182 310, 210 338, 250 338 C290 338, 325 310, 325 272 C325 245, 305 220, 285 220 C265 220, 252 235, 252 250 C252 265, 268 280, 288 280 C308 280, 314 260, 314 250 C314 275, 290 315, 250 315 C210 315, 194 285, 192 265 C190 245, 202 225, 218 215 C228 208, 230 198, 220 200 C202 205, 182 228, 178 250 C175 260, 176 270, 178 280 Z" />
+                        <path d="M165 210 C160 210, 155 240, 158 270 C160 300, 170 320, 175 320 C180 320, 175 290, 172 260 C170 230, 170 210, 165 210 Z" />
+                        <path d="M312 280 C318 280, 335 278, 345 285 C355 292, 348 305, 332 305 C315 305, 305 292, 312 280 Z" />
+                        <path d="M260 140 L285 125 C288 123, 292 127, 290 130 L265 145 C262 147, 258 143, 260 140 Z" />
+                        <path d="M195 160 C190 155, 198 145, 204 150 C210 155, 202 168, 196 168 C194 168, 192 165, 195 160 Z" />
+                        <path d="M152 245 C148 240, 155 232, 160 235 C165 238, 160 250, 154 250 C152 250, 151 248, 152 245 Z" />
+                        <path d="M328 215 C326 210, 332 204, 335 206 C338 208, 336 218, 331 218 C329 218, 328 217, 328 215 Z" />
+                        <path d="M210 325 C208 322, 214 316, 217 318 L223 325 L229 318 C232 316, 238 322, 236 325 L226 335 C224 337, 222 337, 220 335 Z" />
+                        <path d="M276 320 C274 317, 280 311, 283 313 L289 320 L295 313 C298 311, 304 317, 302 320 L292 330 C290 332, 288 332, 286 330 Z" />
+                    </g>
+                </svg>
+                <div class="flex flex-col items-center">
+                    <span class="font-display text-2xl font-bold tracking-[0.25em] text-white">ZARBADSHAH</span>
+                    <span class="text-[9px] tracking-[0.35em] text-gold-400 font-medium font-sans uppercase mt-1">The Scent of Royalty</span>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-8 text-xs font-bold uppercase tracking-[0.15em] text-gray-400">
+                <a href="#" class="hover:text-gold-400 transition-colors">Home</a>
+                <a href="#campaigns-section" class="hover:text-gold-400 transition-colors">Campaigns</a>
+                <a href="#shop-section" class="hover:text-gold-400 transition-colors">The Collection</a>
+                <a href="#why-section" class="hover:text-gold-400 transition-colors">Our Story</a>
+            </div>
+
+            <div class="w-16 h-[1px] bg-gold-400/30 mx-auto"></div>
+
+            <div class="text-[11px] text-gray-500 space-y-1">
+                <p>&copy; 2026 Zarbadshah Luxury Perfumes. All Rights Reserved.</p>
+                <p class="font-mono">Created for elite fragrance connoisseurs in Pakistan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CART SIDEBAR MODAL -->
+    <div id="cart-sidebar" class="fixed inset-0 z-50 overflow-hidden hidden" role="dialog" aria-modal="true">
+        <div class="absolute inset-0 overflow-hidden">
+            <!-- Overlay -->
+            <div onclick="toggleCart(false)" class="absolute inset-0 bg-black/80 backdrop-blur-sm transition-opacity"></div>
+
+            <div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
+                <div class="pointer-events-auto w-screen max-w-md">
+                    <div class="flex h-full flex-col bg-neutral-950 border-l border-gold-500/15 shadow-2xl">
+                        
+                        <!-- Header -->
+                        <div class="flex items-center justify-between px-6 py-6 border-b border-gold-500/10">
+                            <h2 class="text-lg font-display font-semibold text-white tracking-widest uppercase">Your Cart</h2>
+                            <button onclick="toggleCart(false)" class="text-gray-400 hover:text-white cursor-pointer p-1">
+                                <i class="fa-solid fa-xmark text-lg"></i>
+                            </button>
+                        </div>
+
+                        <!-- Content Area -->
+                        <div class="flex-1 overflow-y-auto px-6 py-4 space-y-6">
+                            
+                            <!-- Free Shipping Progress -->
+                            <div class="bg-neutral-900/50 p-4 border border-gold-400/10">
+                                <p id="shipping-progress-text" class="text-xs text-gray-300 mb-2 font-light"></p>
+                                <div class="w-full bg-neutral-800 h-1.5 rounded-none overflow-hidden">
+                                    <div id="shipping-progress-bar" class="bg-gold-400 h-full transition-all duration-500" style="width: 0%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Cart Items List -->
+                            <div id="cart-items-list" class="space-y-4 divide-y divide-white/5">
+                                <!-- Dynamic Items Go Here -->
+                            </div>
+
+                            <!-- Empty State -->
+                            <div id="cart-empty-state" class="text-center py-16 space-y-4">
+                                <i class="fa-solid fa-bag-shopping text-gray-600 text-4xl"></i>
+                                <p class="text-sm text-gray-400 font-light">Your shopping cart is currently empty.</p>
+                                <button onclick="toggleCart(false)" class="px-6 py-2 border border-gold-400/30 hover:border-gold-400 text-[10px] font-bold uppercase tracking-widest text-gold-400 transition-colors">Start Shopping</button>
+                            </div>
+
+                        </div>
+
+                        <!-- Footer Cart Panel -->
+                        <div id="cart-footer" class="border-t border-gold-500/10 bg-black p-6 space-y-4">
+                            <!-- Promo Code Input -->
+                            <div class="flex gap-2">
+                                <input id="promo-code-input" type="text" placeholder="Promo Code (e.g. ROYAL20)" class="flex-grow bg-neutral-900 border border-white/10 focus:border-gold-400 text-xs px-3 py-2 outline-none text-white font-mono placeholder-gray-500 uppercase">
+                                <button onclick="applyPromoCode()" class="px-4 py-2 bg-gold-400 hover:bg-gold-300 text-black text-[10px] font-bold uppercase tracking-widest cursor-pointer transition-colors">Apply</button>
+                            </div>
+                            <p id="promo-status-msg" class="text-[10px] hidden"></p>
+
+                            <!-- Financial Breakdown -->
+                            <div class="space-y-2 text-xs font-mono">
+                                <div class="flex justify-between text-gray-400">
+                                    <span>Subtotal:</span>
+                                    <span id="cart-subtotal">Rs. 0</span>
+                                </div>
+                                <div id="cart-discount-row" class="flex justify-between text-emerald-400 hidden">
+                                    <span>Promo Discount:</span>
+                                    <span id="cart-discount">-Rs. 0</span>
+                                </div>
+                                <div class="flex justify-between text-gray-400">
+                                    <span>Shipping:</span>
+                                    <span id="cart-shipping">Rs. 0</span>
+                                </div>
+                                <div class="h-[1px] bg-white/5 my-2"></div>
+                                <div class="flex justify-between text-sm text-white font-bold">
+                                    <span class="font-display tracking-widest">TOTAL AMOUNT:</span>
+                                    <span id="cart-total" class="text-gold-400">Rs. 0</span>
+                                </div>
+                            </div>
+
+                            <!-- CTA Buttons -->
+                            <div class="space-y-2 pt-2">
+                                <button onclick="openCheckoutModal()" class="w-full py-3.5 bg-gold-400 hover:bg-gold-300 text-black text-xs font-bold uppercase tracking-[0.2em] rounded-none transition-colors cursor-pointer text-center block">
+                                    PROCEED TO CHECKOUT
+                                </button>
+                                <button onclick="toggleCart(false)" class="w-full py-2.5 bg-transparent border border-white/10 hover:border-white/20 text-gray-400 hover:text-white text-[10px] font-bold uppercase tracking-[0.15em] transition-colors cursor-pointer">
+                                    CONTINUE SHOPPING
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCT DETAIL MODAL -->
+    <div id="product-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 hidden">
+        <!-- Overlay -->
+        <div onclick="closeProductModal()" class="fixed inset-0 bg-black/90 backdrop-blur-sm"></div>
+
+        <!-- Panel -->
+        <div class="bg-neutral-950 border border-gold-400/20 max-w-4xl w-full max-h-[90vh] overflow-y-auto relative z-10 shadow-2xl rounded-none flex flex-col md:flex-row">
+            <!-- Close Button -->
+            <button onclick="closeProductModal()" class="absolute top-4 right-4 z-20 text-gray-400 hover:text-white cursor-pointer bg-black/50 w-8 h-8 flex items-center justify-center border border-white/10">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- Image Block -->
+            <div class="md:w-5/12 h-[300px] md:h-auto relative overflow-hidden bg-black">
+                <img id="modal-img" src="" alt="" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent"></div>
+            </div>
+
+            <!-- Content details -->
+            <div class="md:w-7/12 p-6 sm:p-8 space-y-6 flex flex-col justify-between">
+                <div class="space-y-5">
+                    <div class="space-y-2">
+                        <span id="modal-collection" class="text-[9px] font-mono tracking-[0.3em] uppercase text-gold-400 font-bold"></span>
+                        <h3 id="modal-name" class="text-2xl sm:text-3xl font-display font-semibold tracking-wide text-white"></h3>
+                        <div class="flex items-center space-x-3 text-xs">
+                            <div class="flex text-gold-400 space-x-0.5">
+                                <i class="fa-solid fa-star"></i><span id="modal-rating" class="font-bold text-white ml-1.5"></span>
+                            </div>
+                            <span class="text-gray-500">•</span>
+                            <span id="modal-reviews-count" class="text-gray-400 font-light"></span>
+                        </div>
+                    </div>
+
+                    <p id="modal-desc" class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed"></p>
+
+                    <!-- Notes lists -->
+                    <div class="space-y-3 bg-black/50 p-4 border border-white/5">
+                        <span class="text-[10px] text-gray-400 uppercase font-bold tracking-widest font-mono">Scent pyramid</span>
+                        <div class="space-y-2 text-xs">
+                            <p class="text-gray-300"><strong class="text-gold-400 tracking-wider">Top Notes:</strong> <span id="modal-notes-top"></span></p>
+                            <p class="text-gray-300"><strong class="text-gold-400 tracking-wider">Heart Notes:</strong> <span id="modal-notes-heart"></span></p>
+                            <p class="text-gray-300"><strong class="text-gold-400 tracking-wider">Base Notes:</strong> <span id="modal-notes-base"></span></p>
+                        </div>
+                    </div>
+
+                    <!-- Size Selection -->
+                    <div class="space-y-3">
+                        <span class="text-[10px] text-gray-400 uppercase font-bold tracking-widest font-mono">Select bottle size</span>
+                        <div class="flex gap-3">
+                            <button onclick="selectModalSize('50ml')" id="btn-size-50" class="px-5 py-2.5 border border-gold-400 text-white text-xs font-bold tracking-wider rounded-none bg-gold-400/10 cursor-pointer transition-all">
+                                50ml — Regular
+                            </button>
+                            <button onclick="selectModalSize('100ml')" id="btn-size-100" class="px-5 py-2.5 border border-white/10 text-gray-400 hover:text-white text-xs font-bold tracking-wider rounded-none cursor-pointer transition-all">
+                                100ml — Royal (+Rs. 1,450)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer / Purchase action -->
+                <div class="pt-6 border-t border-white/5 flex items-center justify-between">
+                    <div>
+                        <span class="text-[9px] text-gray-400 uppercase block font-semibold tracking-wider">Total Price</span>
+                        <span id="modal-price" class="text-2xl font-mono text-gold-400 font-bold"></span>
+                    </div>
+
+                    <button onclick="addProductFromModal()" class="px-8 py-3.5 bg-gold-400 hover:bg-gold-300 text-black text-xs font-bold uppercase tracking-[0.15em] rounded-none cursor-pointer transition-colors">
+                        Add to Royal Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WISHLIST MODAL -->
+    <div id="wishlist-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 hidden">
+        <div onclick="toggleWishlistModal()" class="fixed inset-0 bg-black/90 backdrop-blur-sm"></div>
+        <div class="bg-neutral-950 border border-gold-400/20 max-w-xl w-full max-h-[80vh] overflow-y-auto relative z-10 shadow-2xl p-6">
+            <button onclick="toggleWishlistModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white cursor-pointer bg-black/50 w-8 h-8 flex items-center justify-center border border-white/10">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 class="text-lg font-display font-semibold text-white tracking-widest uppercase mb-6 border-b border-white/5 pb-3">Your Favorites</h3>
+            <div id="wishlist-items-list" class="space-y-4"></div>
+            <div id="wishlist-empty" class="text-center py-12 text-gray-500 text-xs hidden">
+                <i class="fa-regular fa-heart text-4xl mb-4 text-gray-700 block"></i>
+                No luxury favorites saved yet. Click the hearts on perfume cards!
+            </div>
+        </div>
+    </div>
+
+    <!-- CHECKOUT MODAL -->
+    <div id="checkout-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 hidden">
+        <div onclick="closeCheckoutModal()" class="fixed inset-0 bg-black/95 backdrop-blur-sm"></div>
+        <div class="bg-neutral-950 border border-gold-400/25 max-w-2xl w-full max-h-[90vh] overflow-y-auto relative z-10 shadow-2xl rounded-none p-6 sm:p-8">
+            <button onclick="closeCheckoutModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white cursor-pointer bg-black/50 w-8 h-8 flex items-center justify-center border border-white/10">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h3 class="text-xl font-display font-semibold text-white tracking-widest uppercase mb-6 border-b border-gold-400/10 pb-4">Royal Checkout</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Shipping details form -->
+                <form id="checkout-form" class="space-y-4">
+                    <div class="space-y-1.5">
+                        <label class="text-[10px] text-gray-400 uppercase tracking-widest block font-bold font-mono">Your Full Name *</label>
+                        <input id="checkout-name" type="text" required class="w-full bg-neutral-900 border border-white/10 focus:border-gold-400 text-xs text-white px-3.5 py-2.5 outline-none">
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <label class="text-[10px] text-gray-400 uppercase tracking-widest block font-bold font-mono">WhatsApp Phone Number *</label>
+                        <input id="checkout-phone" type="tel" required placeholder="e.g. 03001234567" class="w-full bg-neutral-900 border border-white/10 focus:border-gold-400 text-xs text-white px-3.5 py-2.5 outline-none font-mono">
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <label class="text-[10px] text-gray-400 uppercase tracking-widest block font-bold font-mono">City (Pakistan) *</label>
+                        <input id="checkout-city" type="text" required placeholder="e.g. Lahore, Karachi, Islamabad" class="w-full bg-neutral-900 border border-white/10 focus:border-gold-400 text-xs text-white px-3.5 py-2.5 outline-none">
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <label class="text-[10px] text-gray-400 uppercase tracking-widest block font-bold font-mono">Complete Delivery Address *</label>
+                        <textarea id="checkout-address" required rows="3" class="w-full bg-neutral-900 border border-white/10 focus:border-gold-400 text-xs text-white px-3.5 py-2.5 outline-none resize-none"></textarea>
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <label class="text-[10px] text-gray-400 uppercase tracking-widest block font-bold font-mono">Payment Method</label>
+                        <select id="checkout-payment" onchange="updateCheckoutPaymentDetails()" class="w-full bg-neutral-900 border border-white/10 focus:border-gold-400 text-xs text-white px-3.5 py-2.5 outline-none cursor-pointer">
+                            <option value="Cash on Delivery (COD)">Cash on Delivery (COD) • Free</option>
+                            <option value="EasyPaisa Mobile Wallet">EasyPaisa Mobile Wallet</option>
+                            <option value="JazzCash Mobile Wallet">JazzCash Mobile Wallet</option>
+                            <option value="Direct Bank Transfer">Direct Bank Transfer (Save 3%)</option>
+                        </select>
+                    </div>
+
+                    <!-- Payment Details Area -->
+                    <div id="checkout-payment-details" class="hidden p-4 bg-black border border-gold-400/20 rounded-none text-[11px] text-gray-400 leading-relaxed space-y-2"></div>
+                </form>
+
+                <!-- Order summary and CTA -->
+                <div class="flex flex-col justify-between bg-black p-5 border border-white/5 space-y-6">
+                    <div class="space-y-4">
+                        <h4 class="text-xs uppercase font-bold tracking-widest text-gold-400 border-b border-white/5 pb-2">Order Bill Invoice</h4>
+                        <div id="checkout-invoice-items" class="space-y-2.5 text-xs font-mono max-h-40 overflow-y-auto pr-1"></div>
+                        <div class="border-t border-white/5 pt-3 space-y-2 text-xs font-mono">
+                            <div class="flex justify-between text-gray-400">
+                                <span>Subtotal:</span>
+                                <span id="checkout-subtotal"></span>
+                            </div>
+                            <div id="checkout-discount-row" class="flex justify-between text-emerald-400 hidden">
+                                <span>Discount:</span>
+                                <span id="checkout-discount"></span>
+                            </div>
+                            <div class="flex justify-between text-gray-400">
+                                <span>Shipping Fee:</span>
+                                <span id="checkout-shipping"></span>
+                            </div>
+                            <div class="h-[1px] bg-white/5 my-2"></div>
+                            <div class="flex justify-between text-sm text-white font-bold">
+                                <span>GRAND TOTAL:</span>
+                                <span id="checkout-total" class="text-gold-400"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="submitOrderViaWhatsApp()" class="w-full py-4 bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-bold uppercase tracking-[0.2em] rounded-none transition-colors cursor-pointer text-center flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        SUBMIT ORDER VIA WHATSAPP
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CORE STOREFRONT JAVASCRIPT LOGIC -->
+    <script>
+        // Core Products Data
+        const products = [
+            {
+                id: 'white-oud',
+                name: 'White Oud',
+                collection: 'men',
+                price: 3850,
+                originalPrice: 4800,
+                image: 'https://ais-dev-aqusevpsiyjiwqpxdlgymd-406638790770.asia-southeast1.run.app/src/assets/images/perfume_white_oud_1783495892449.jpg',
+                shortDescription: 'An ultra-refined, smooth, and powdery interpretation of precious agarwood.',
+                description: 'White Oud represents the pinnacle of subtle sophistication. Far from the harshness of traditional heavy ouds, this fragrance introduces a creamy, powdery, and highly sophisticated agarwood experience. Wrapped in white pepper, precious rosewood, and warm amber, it creates a lingering, elite aura.',
+                notes: { top: 'White Pepper, Rosewood, Cardamom', heart: 'Precious Oud, Sichuan Pepper, Sandalwood', base: 'Vanilla, Vetiver, Tonka Bean, Amber' },
+                rating: 4.9,
+                reviewsCount: 148,
+                longevity: '8-12 Hours'
+            },
+            {
+                id: 'majnu',
+                name: 'Majnu',
+                collection: 'men',
+                price: 3450,
+                originalPrice: 4200,
+                image: 'https://ais-dev-aqusevpsiyjiwqpxdlgymd-406638790770.asia-southeast1.run.app/src/assets/images/perfume_majnu_1783495911302.jpg',
+                shortDescription: 'A passionate, deep, smoky amber with rich undertones of raw leather and pink pepper.',
+                description: 'Majnu is a scent of devotion, mystery, and raw confidence. Named after the legendary lover, this fragrance blends intense dark leather with vibrant pink pepper and rich patchouli. It is smoky, resinous, and deeply passionate, drying down to an amber-infused musk.',
+                notes: { top: 'Bergamot, Pink Pepper, Incense', heart: 'Tuscan Leather, Patchouli, Saffron', base: 'Warm Amber, Cedarwood, Rich Musk' },
+                rating: 4.8,
+                reviewsCount: 96,
+                longevity: '12+ Hours'
+            },
+            {
+                id: 'sultan',
+                name: 'Sultan',
+                collection: 'men',
+                price: 3950,
+                originalPrice: 4950,
+                image: 'https://ais-dev-aqusevpsiyjiwqpxdlgymd-406638790770.asia-southeast1.run.app/src/assets/images/perfume_sultan_1783495969643.jpg',
+                shortDescription: 'A majestic, royal blend of precious saffron, spices, and deep golden agarwood.',
+                description: 'Sultan is a fragrance of royalty, absolute power, and grandeur. It opens with an opulent burst of saffron, cardamom, and fresh nutmeg, melting into a deep heart of dark rose and precious jasmine. The dry down is a powerful presence of pure agarwood.',
+                notes: { top: 'Saffron, Cardamom, Nutmeg', heart: 'Royal Rose, Night Jasmine, Myrrh', base: 'Agarwood (Oud), Royal Amber, Tuscan Leather' },
+                rating: 4.9,
+                reviewsCount: 112,
+                longevity: '12+ Hours'
+            },
+            {
+                id: 'laila',
+                name: 'Laila',
+                collection: 'women',
+                price: 3450,
+                originalPrice: 4200,
+                image: 'https://ais-dev-aqusevpsiyjiwqpxdlgymd-406638790770.asia-southeast1.run.app/src/assets/images/perfume_laila_1783495931947.jpg',
+                shortDescription: 'A dreamy, delicate bouquet of romantic roses, fresh peonies, and soft white musk.',
+                description: 'Laila is the essence of delicate elegance and romantic dreams. It opens with a sparkling burst of fresh rose petals, soft pink peonies, and bright mandarin orange. The heart reveals juicy apricots and peaches blended with night-blooming jasmine.',
+                notes: { top: 'Damask Rose, Pink Peony, Mandarin', heart: 'Sweet Apricot, Night Jasmine, Peach', base: 'White Musk, Creamy Sandalwood, Amberwood' },
+                rating: 4.7,
+                reviewsCount: 84,
+                longevity: '6-8 Hours'
+            },
+            {
+                id: 'darshi',
+                name: 'Darshi',
+                collection: 'women',
+                price: 3650,
+                originalPrice: 4500,
+                image: 'https://ais-dev-aqusevpsiyjiwqpxdlgymd-406638790770.asia-southeast1.run.app/src/assets/images/perfume_darshi_1783496010506.jpg',
+                shortDescription: 'A seductive, gourmand embrace of rich vanilla, sweet caramel, and creamy coconut.',
+                description: 'Darshi is a captivating gourmand fragrance that envelops you in sweet, warm temptation. With a luxurious opening of velvety vanilla, rich butter caramel, and coconut milk, it melts into a floral heart of ylang-ylang and exotic heliotrope.',
+                notes: { top: 'Madagascar Vanilla, Rich Caramel, Coconut Milk', heart: 'Ylang-Ylang, Heliotrope, White Lily', base: 'Siam Benzoin, Golden Musk, Sandalwood' },
+                rating: 4.9,
+                reviewsCount: 67,
+                longevity: '8-12 Hours'
+            },
+            {
+                id: 'ishq',
+                name: 'Ishq',
+                collection: 'women',
+                price: 3850,
+                originalPrice: 4800,
+                image: 'https://ais-dev-aqusevpsiyjiwqpxdlgymd-406638790770.asia-southeast1.run.app/src/assets/images/perfume_ishq_1783495990526.jpg',
+                shortDescription: 'An intense, hypnotic blend of dark red roses, warm spices, and seductive amberwood.',
+                description: 'Ishq is an exploration of deep, passionate obsession. A powerful, hypnotic fragrance that blends opulent dark rose with warm saffron, jasmine, and exotic patchouli. It dries down to a rich, resinous amberwood, velvety vanilla, and precious resins.',
+                notes: { top: 'Dark Roses, Saffron, Red Berries', heart: 'Royal Jasmine, Warm Patchouli, Clary Sage', base: 'Amberwood, Vanilla, Benzoin, Oud Wood' },
+                rating: 4.9,
+                reviewsCount: 118,
+                longevity: '12+ Hours'
+            },
+            {
+                id: 'dream',
+                name: 'Dream',
+                collection: 'unisex',
+                price: 3750,
+                originalPrice: 4600,
+                image: 'https://ais-dev-aqusevpsiyjiwqpxdlgymd-406638790770.asia-southeast1.run.app/src/assets/images/perfume_dream_1783495948982.jpg',
+                shortDescription: 'An ethereal, celestial ocean breeze combined with earthy sage, lavender, and cedar.',
+                description: 'Dream is a universal, fluid masterpiece that transcends boundaries. Evoking a high-altitude sea breeze drifting over rugged cedar cliffs, it starts with fresh Calabrian bergamot, sea salt, and aromatic sage.',
+                notes: { top: 'Calabrian Bergamot, Sea Salt, Sage', heart: 'Calming Lavender, Ambrette, Seaweed', base: 'Driftwood, Virginia Cedarwood, Clean Musk' },
+                rating: 4.8,
+                reviewsCount: 132,
+                longevity: '8-12 Hours'
+            },
+            {
+                id: 'izhaar',
+                name: 'Izhaar',
+                collection: 'unisex',
+                price: 3950,
+                originalPrice: 4900,
+                image: 'https://ais-dev-aqusevpsiyjiwqpxdlgymd-406638790770.asia-southeast1.run.app/src/assets/images/perfume_izhaar_1783498426271.jpg',
+                shortDescription: 'Zarbadshah presents Izhaar: Unspoken Emotions. An intimate, deep, and utterly seductive blend.',
+                description: 'Izhaar is an exploration of deep emotions, unspoken thoughts, and intense romantic devotion. It opens with an intimate burst of warm cardamom, pink pepper, and wild bergamot. The heart unfolds a majestic blend of dark red roses.',
+                notes: { top: 'Cardamom, Pink Pepper, Bergamot', heart: 'Dark Roses, Saffron, Night Jasmine', base: 'Amberwood, Golden Musk, Sandalwood, Patchouli' },
+                rating: 4.9,
+                reviewsCount: 74,
+                longevity: '12+ Hours'
+            }
+        ];
+
+        // Campaigns Data
+        const campaigns = [
+            {
+                id: 'royal-collection',
+                title: 'The Signature Imperial Collection',
+                tagline: 'COMMAND THE PRESTIGE',
+                badge: 'Royal Assemblage',
+                description: 'Step into the grand court of Zarbadshah. Our Signature Collection gathers the finest extraits ever bottled in South Asia, curated for rulers, disruptors, and visionaries. Every blend is handfilled containing above 35% absolute perfume oil concentration.',
+                image: 'https://ais-dev-aqusevpsiyjiwqpxdlgymd-406638790770.asia-southeast1.run.app/src/assets/images/campaign_collection_1783498452704.jpg',
+                notes: ['Precious White Oud', 'Saffron Extract', 'Madagascar Vanilla', 'Tuscan Leather'],
+                targetProductId: 'white-oud'
+            },
+            {
+                id: 'izhaar-campaign',
+                title: 'Izhaar: Unspoken Silent Desires',
+                tagline: 'LET SCENT DO THE TALKING',
+                badge: 'Grand Seduction',
+                description: 'A fragrance of pure magnetic connection. Izhaar represents the delicate moments where words fail and emotions take over. Blending rare Indian saffron with warm night jasmine and heavy amberwood, it lingers beautifully, forming an invisible path of confidence.',
+                image: 'https://ais-dev-aqusevpsiyjiwqpxdlgymd-406638790770.asia-southeast1.run.app/src/assets/images/perfume_izhaar_1783498426271.jpg',
+                notes: ['Royal Cardamom', 'Black Damask Rose', 'Warm Amberwood', 'Golden Patchouli'],
+                targetProductId: 'izhaar'
+            },
+            {
+                id: 'sultan-campaign',
+                title: 'Sultan: Sovereignty & Absolute Power',
+                tagline: 'RULE WITH EVERY GLANCE',
+                badge: 'Emperor\'s Seal',
+                description: 'For those who sit on thrones of leadership. Sultan is a thick, dark golden fluid of precious spices, smoky incense, and pure Southeast Asian agarwood oil. Projects across chambers and commands absolute respect from the very first mist.',
+                image: 'https://ais-dev-aqusevpsiyjiwqpxdlgymd-406638790770.asia-southeast1.run.app/src/assets/images/campaign_sultan_1783498521001.jpg',
+                notes: ['Saffron', 'Royal Rose Buds', 'Aged Agarwood', 'Myrrh Resin'],
+                targetProductId: 'sultan'
+            },
+            {
+                id: 'laila-campaign',
+                title: 'Laila: Delicate Romantic Dreamscape',
+                tagline: 'THE SWEET ECHO OF LUXURY',
+                badge: 'Ethereal Feminine',
+                description: 'Inspired by romantic misty mornings in the Himalayan valleys. Laila features a gorgeous bouquet of velvety fresh-cut pink peonies, Damask rose buds, and peaches in a powdery cloud of French white musk. Soothing, delicate, and deeply captivating.',
+                image: 'https://ais-dev-aqusevpsiyjiwqpxdlgymd-406638790770.asia-southeast1.run.app/src/assets/images/campaign_laila_1783498547131.jpg',
+                notes: ['Damask Rose', 'Sweet Peonies', 'Juicy Apricot', 'White Cloud Musk'],
+                targetProductId: 'laila'
+            },
+            {
+                id: 'darshi-campaign',
+                title: 'Darshi: Indulgent Seductive Sweetness',
+                tagline: 'A SWEET EMBRACE OF WEALTH',
+                badge: 'Gourmand Obsession',
+                description: 'An edible, addictive masterpiece. Darshi is a warm, decadent luxury blend of premium Madagascar vanilla beans, warm salted caramel, and rich coconut milk. Seductive, warm, and highly inviting for evening wear and romantic banquets.',
+                image: 'https://ais-dev-aqusevpsiyjiwqpxdlgymd-406638790770.asia-southeast1.run.app/src/assets/images/campaign_darshi_1783498572824.jpg',
+                notes: ['Madagascar Vanilla', 'Rich Caramel', 'Coconut Nectar', 'Heliotrope Flower'],
+                targetProductId: 'darshi'
+            },
+            {
+                id: 'majnu-campaign',
+                title: 'Majnu: Passion & Raw Indomitable Spirit',
+                tagline: 'A SCENT OF INTENSE DEVOTION',
+                badge: 'Smoky Masculine',
+                description: 'Deep, smoky, and dangerously seductive. Majnu features a highly intense combination of heavy Tuscan leather, pink pepper, clary sage, and rich ambergris. Built for the modern, mysterious gentleman with an edge.',
+                image: 'https://ais-dev-aqusevpsiyjiwqpxdlgymd-406638790770.asia-southeast1.run.app/src/assets/images/campaign_majnu_1783498599124.jpg',
+                notes: ['Tuscan Leather', 'Smoky Bergamot', 'Pink Pepper', 'Rich Musk'],
+                targetProductId: 'majnu'
+            }
+        ];
+
+        // Coupons
+        const couponCodes = {
+            'ZARBADSHAH10': { percent: 10, min: 0 },
+            'ROYAL20': { percent: 20, min: 10000 },
+            'WELCOME5': { percent: 5, min: 0 }
+        };
+
+        // State Store
+        let cart = JSON.parse(localStorage.getItem('zb-cart') || '[]');
+        let wishlist = JSON.parse(localStorage.getItem('zb-wishlist') || '[]');
+        let activeCampaignIdx = 0;
+        let selectedFilter = 'all';
+        let searchQuery = '';
+        let currentSort = 'popular';
+        let activePromoCode = localStorage.getItem('zb-promo') || '';
+        let activeModalProduct = null;
+        let activeModalSize = '50ml';
+
+        // Helpers
+        function formatPKR(num) {
+            return 'Rs. ' + num.toLocaleString('en-PK');
+        }
+
+        // Render Active Campaign
+        function renderCampaign() {
+            const camp = campaigns[activeCampaignIdx];
+            document.getElementById('campaign-active-img').src = camp.image;
+            document.getElementById('campaign-active-img').alt = camp.title;
+            document.getElementById('campaign-active-badge').textContent = camp.badge;
+            document.getElementById('campaign-active-tagline').textContent = `⚜ ${camp.tagline} ⚜`;
+            document.getElementById('campaign-active-title').textContent = camp.title;
+            document.getElementById('campaign-active-desc').textContent = camp.description;
+
+            // Notes
+            const notesDiv = document.getElementById('campaign-active-notes');
+            notesDiv.innerHTML = '';
+            camp.notes.forEach(note => {
+                const span = document.createElement('span');
+                span.className = 'px-3 py-1.5 bg-gold-400/5 hover:bg-gold-400/10 border border-gold-400/20 text-xs text-gray-300 font-mono tracking-wider transition-colors';
+                span.textContent = `✦ ${note}`;
+                notesDiv.appendChild(span);
+            });
+
+            // Action BTNs
+            document.getElementById('campaign-active-explore-btn').onclick = () => openProductModal(camp.targetProductId);
+            document.getElementById('campaign-active-buy-btn').onclick = () => {
+                const prod = products.find(p => p.id === camp.targetProductId);
+                if (prod) {
+                    addToCart(prod.id, '50ml');
+                    toggleCart(true);
+                }
+            };
+        }
+
+        // Build Campaign Thumbnails
+        function buildCampaignThumbnails() {
+            const container = document.getElementById('campaign-thumbnails');
+            container.innerHTML = '';
+            campaigns.forEach((camp, idx) => {
+                const btn = document.createElement('button');
+                btn.className = `flex-none w-28 sm:w-36 aspect-[3/4] relative overflow-hidden cursor-pointer border transition-all duration-300 ${
+                    activeCampaignIdx === idx 
+                        ? 'border-gold-400 scale-[1.03]' 
+                        : 'border-white/10 opacity-50 hover:opacity-80'
+                }`;
+                btn.onclick = () => {
+                    activeCampaignIdx = idx;
+                    renderCampaign();
+                    buildCampaignThumbnails();
+                };
+                
+                btn.innerHTML = `
+                    <img src="${camp.image}" alt="${camp.title}" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="absolute inset-x-0 bottom-0 p-2.5 bg-gradient-to-t from-black via-black/80 to-transparent text-left">
+                        <p class="text-[8px] text-gold-400 font-mono tracking-widest uppercase mb-0.5">Zarbadshah</p>
+                        <p class="text-[9px] text-white font-display tracking-tight font-bold truncate">${camp.title.split(':')[0]}</p>
+                    </div>
+                `;
+                container.appendChild(btn);
+            });
+        }
+
+        // Filter & Sort Products
+        function getFilteredProducts() {
+            let list = [...products];
+
+            // Filter
+            if (selectedFilter !== 'all') {
+                list = list.filter(p => p.collection === selectedFilter);
+            }
+
+            // Search
+            if (searchQuery) {
+                const q = searchQuery.toLowerCase();
+                list = list.filter(p => 
+                    p.name.toLowerCase().includes(q) || 
+                    p.shortDescription.toLowerCase().includes(q) ||
+                    p.notes.top.toLowerCase().includes(q) ||
+                    p.notes.heart.toLowerCase().includes(q) ||
+                    p.notes.base.toLowerCase().includes(q)
+                );
+            }
+
+            // Sort
+            if (currentSort === 'price-asc') {
+                list.sort((a, b) => a.price - b.price);
+            } else if (currentSort === 'price-desc') {
+                list.sort((a, b) => b.price - a.price);
+            } else if (currentSort === 'rating') {
+                list.sort((a, b) => b.rating - a.rating);
+            }
+
+            return list;
+        }
+
+        // Render Catalog Grid
+        function renderProducts() {
+            const grid = document.getElementById('products-grid');
+            grid.innerHTML = '';
+            const list = getFilteredProducts();
+
+            if (list.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full text-center py-16 space-y-4">
+                        <p class="text-gray-400 text-sm">No luxurious scents match your search criteria.</p>
+                        <button onclick="clearFilters()" class="px-6 py-2 border border-gold-400 text-gold-400 text-xs uppercase tracking-widest font-mono">Reset Filters</button>
+                    </div>
+                `;
+                return;
+            }
+
+            list.forEach(p => {
+                const inWishlist = wishlist.includes(p.id);
+                const card = document.createElement('div');
+                card.className = 'bg-[#0a0a0a] border border-white/5 hover:border-gold-400/30 transition-all duration-300 relative group flex flex-col justify-between';
+                
+                card.innerHTML = `
+                    <div class="relative aspect-square overflow-hidden bg-black">
+                        <!-- Badges -->
+                        <div class="absolute top-3 left-3 z-20 flex flex-col gap-1.5">
+                            ${p.price < p.originalPrice ? `<span class="px-2 py-0.5 bg-red-600 text-[8px] font-bold tracking-widest text-white uppercase font-mono">Sale</span>` : ''}
+                        </div>
+
+                        <!-- Wishlist heart -->
+                        <button onclick="toggleWishlist('${p.id}', event)" class="absolute top-3 right-3 z-20 w-8 h-8 rounded-full bg-black/60 hover:bg-black/90 text-white hover:text-gold-400 border border-white/5 flex items-center justify-center transition-all cursor-pointer">
+                            <i class="${inWishlist ? 'fa-solid fa-heart text-gold-400' : 'fa-regular fa-heart'}"></i>
+                        </button>
+
+                        <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                            <button onclick="openProductModal('${p.id}')" class="w-full py-2.5 bg-white text-black text-[10px] font-bold uppercase tracking-widest transition-colors hover:bg-gold-400">
+                                Scent Revelation
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="p-5 space-y-4 flex-grow flex flex-col justify-between">
+                        <div class="space-y-1">
+                            <span class="text-[8px] font-mono tracking-[0.25em] text-gold-400 uppercase font-bold">${p.collection} collection</span>
+                            <h4 class="text-base font-display text-white font-bold tracking-wide">${p.name}</h4>
+                            <p class="text-gray-400 text-xs font-light line-clamp-2">${p.shortDescription}</p>
+                        </div>
+
+                        <div class="space-y-3 pt-2">
+                            <!-- Ratings -->
+                            <div class="flex items-center justify-between text-[11px] font-mono text-gray-400">
+                                <span class="flex items-center text-gold-400 gap-1"><i class="fa-solid fa-star"></i> ${p.rating}</span>
+                                <span>${p.longevity}</span>
+                            </div>
+
+                            <!-- Pricing -->
+                            <div class="flex items-baseline justify-between border-t border-white/5 pt-3">
+                                <div class="flex items-baseline space-x-2">
+                                    <span class="text-base font-mono font-bold text-white">${formatPKR(p.price)}</span>
+                                    ${p.originalPrice ? `<span class="text-xs font-mono line-through text-gray-500">${formatPKR(p.originalPrice)}</span>` : ''}
+                                </div>
+                                <button onclick="quickAdd('${p.id}')" class="text-xs text-gold-400 hover:text-white font-bold uppercase tracking-widest flex items-center gap-1 cursor-pointer">
+                                    Buy <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Cart Actions
+        function addToCart(id, size) {
+            const product = products.find(p => p.id === id);
+            if (!product) return;
+
+            const existing = cart.find(item => item.id === id && item.size === size);
+            if (existing) {
+                existing.quantity++;
+            } else {
+                cart.push({
+                    id: product.id,
+                    name: product.name,
+                    price: size === '100ml' ? product.price + 1450 : product.price,
+                    image: product.image,
+                    size: size,
+                    quantity: 1
+                });
+            }
+            saveCartState();
+            updateCartUI();
+        }
+
+        function updateCartQuantity(index, delta) {
+            cart[index].quantity += delta;
+            if (cart[index].quantity <= 0) {
+                cart.splice(index, 1);
+            }
+            saveCartState();
+            updateCartUI();
+        }
+
+        function removeCartItem(index) {
+            cart.splice(index, 1);
+            saveCartState();
+            updateCartUI();
+        }
+
+        function saveCartState() {
+            localStorage.setItem('zb-cart', JSON.stringify(cart));
+        }
+
+        // Update Cart Badge, Totals, Progress and Itemized List
+        function updateCartUI() {
+            const totalQty = cart.reduce((acc, item) => acc + item.quantity, 0);
+            const badge = document.getElementById('cart-badge');
+            
+            if (totalQty > 0) {
+                badge.textContent = totalQty;
+                badge.classList.remove('hidden');
+            } else {
+                badge.classList.add('hidden');
+            }
+
+            // Calculations
+            const subtotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+            
+            // Promo Code discount
+            let discountAmount = 0;
+            if (activePromoCode && couponCodes[activePromoCode]) {
+                const promo = couponCodes[activePromoCode];
+                if (subtotal >= promo.min) {
+                    discountAmount = Math.round(subtotal * (promo.percent / 100));
+                } else {
+                    activePromoCode = '';
+                    localStorage.removeItem('zb-promo');
+                }
+            }
+
+            // Shipping
+            const shippingFee = (subtotal >= 5000 || subtotal === 0) ? 0 : 250;
+            const grandTotal = Math.max(0, subtotal - discountAmount + shippingFee);
+
+            // Update UI elements
+            document.getElementById('cart-total-nav').textContent = formatPKR(grandTotal);
+            document.getElementById('cart-subtotal').textContent = formatPKR(subtotal);
+            
+            if (discountAmount > 0) {
+                document.getElementById('cart-discount-row').classList.remove('hidden');
+                document.getElementById('cart-discount').textContent = `- ${formatPKR(discountAmount)}`;
+            } else {
+                document.getElementById('cart-discount-row').classList.add('hidden');
+            }
+            
+            document.getElementById('cart-shipping').textContent = shippingFee === 0 ? 'FREE' : formatPKR(shippingFee);
+            document.getElementById('cart-total').textContent = formatPKR(grandTotal);
+
+            // Free Shipping Meter
+            const progressText = document.getElementById('shipping-progress-text');
+            const progressBar = document.getElementById('shipping-progress-bar');
+            if (subtotal === 0) {
+                progressText.innerHTML = "Add Rs. 5,000 or more to enjoy **FREE shipping**.";
+                progressBar.style.width = '0%';
+            } else if (subtotal >= 5000) {
+                progressText.innerHTML = "✨ **Congratulations!** Your order qualifies for **FREE delivery**.";
+                progressBar.style.width = '100%';
+            } else {
+                const diff = 5000 - subtotal;
+                progressText.innerHTML = `Add **${formatPKR(diff)}** more to unlock **FREE shipping**.`;
+                progressBar.style.width = `${(subtotal / 5000) * 100}%`;
+            }
+
+            // Items list
+            const container = document.getElementById('cart-items-list');
+            container.innerHTML = '';
+            
+            if (cart.length === 0) {
+                document.getElementById('cart-empty-state').classList.remove('hidden');
+                document.getElementById('cart-footer').classList.add('hidden');
+            } else {
+                document.getElementById('cart-empty-state').classList.add('hidden');
+                document.getElementById('cart-footer').classList.remove('hidden');
+
+                cart.forEach((item, idx) => {
+                    const row = document.createElement('div');
+                    row.className = 'flex gap-4 py-4 items-center';
+                    row.innerHTML = `
+                        <img src="${item.image}" alt="${item.name}" class="w-16 h-16 object-cover border border-white/10">
+                        <div class="flex-grow space-y-1">
+                            <div class="flex justify-between">
+                                <h4 class="text-xs font-bold text-white">${item.name}</h4>
+                                <button onclick="removeCartItem(${idx})" class="text-gray-500 hover:text-red-400 text-xs cursor-pointer"><i class="fa-regular fa-trash-can"></i></button>
+                            </div>
+                            <p class="text-[10px] text-gold-400 font-mono">${item.size} bottle</p>
+                            
+                            <div class="flex justify-between items-center pt-1">
+                                <!-- Qty controls -->
+                                <div class="flex border border-white/10 text-xs">
+                                    <button onclick="updateCartQuantity(${idx}, -1)" class="px-2.5 py-1 text-gray-400 hover:text-white cursor-pointer">-</button>
+                                    <span class="px-3 py-1 font-mono text-white text-[11px] bg-neutral-900">${item.quantity}</span>
+                                    <button onclick="updateCartQuantity(${idx}, 1)" class="px-2.5 py-1 text-gray-400 hover:text-white cursor-pointer">+</button>
+                                </div>
+                                <span class="text-xs font-mono font-semibold text-white">${formatPKR(item.price * item.quantity)}</span>
+                            </div>
+                        </div>
+                    `;
+                    container.appendChild(row);
+                });
+            }
+        }
+
+        // Apply Promo Code
+        function applyPromoCode() {
+            const input = document.getElementById('promo-code-input').value.trim().toUpperCase();
+            const msg = document.getElementById('promo-status-msg');
+            msg.classList.remove('hidden');
+
+            if (!input) {
+                msg.textContent = "Please enter a valid coupon code.";
+                msg.className = "text-[10px] text-red-400 mt-1";
+                return;
+            }
+
+            if (couponCodes[input]) {
+                const subtotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+                if (subtotal >= couponCodes[input].min) {
+                    activePromoCode = input;
+                    localStorage.setItem('zb-promo', input);
+                    updateCartUI();
+                    msg.textContent = `Coupon ${input} applied successfully!`;
+                    msg.className = "text-[10px] text-emerald-400 mt-1";
+                } else {
+                    msg.textContent = `Coupon requires a minimum purchase of ${formatPKR(couponCodes[input].min)}.`;
+                    msg.className = "text-[10px] text-red-400 mt-1";
+                }
+            } else {
+                msg.textContent = "Invalid promo code.";
+                msg.className = "text-[10px] text-red-400 mt-1";
+            }
+        }
+
+        // Toggle Sidebar
+        function toggleCart(show) {
+            const sidebar = document.getElementById('cart-sidebar');
+            if (show) {
+                sidebar.classList.remove('hidden');
+                updateCartUI();
+            } else {
+                sidebar.classList.add('hidden');
+            }
+        }
+
+        // Wishlist Actions
+        function toggleWishlist(id, e) {
+            if (e) e.stopPropagation();
+            const idx = wishlist.indexOf(id);
+            if (idx > -1) {
+                wishlist.splice(idx, 1);
+            } else {
+                wishlist.push(id);
+            }
+            localStorage.setItem('zb-wishlist', JSON.stringify(wishlist));
+            renderProducts();
+            updateWishlistBadge();
+        }
+
+        function updateWishlistBadge() {
+            const badge = document.getElementById('wishlist-badge');
+            if (wishlist.length > 0) {
+                badge.textContent = wishlist.length;
+                badge.classList.remove('hidden');
+            } else {
+                badge.classList.add('hidden');
+            }
+        }
+
+        function toggleWishlistModal() {
+            const modal = document.getElementById('wishlist-modal');
+            const container = document.getElementById('wishlist-items-list');
+            const empty = document.getElementById('wishlist-empty');
+            
+            if (modal.classList.contains('hidden')) {
+                modal.classList.remove('hidden');
+                container.innerHTML = '';
+                
+                if (wishlist.length === 0) {
+                    empty.classList.remove('hidden');
+                } else {
+                    empty.classList.add('hidden');
+                    wishlist.forEach(id => {
+                        const p = products.find(prod => prod.id === id);
+                        if (p) {
+                            const row = document.createElement('div');
+                            row.className = 'flex gap-4 py-3 items-center border-b border-white/5 last:border-0';
+                            row.innerHTML = `
+                                <img src="${p.image}" alt="${p.name}" class="w-12 h-12 object-cover border border-white/10">
+                                <div class="flex-grow">
+                                    <h4 class="text-xs font-bold text-white">${p.name}</h4>
+                                    <p class="text-[10px] text-gold-400 font-mono">${formatPKR(p.price)}</p>
+                                </div>
+                                <button onclick="quickAdd('${p.id}'); toggleWishlistModal()" class="px-4 py-1.5 bg-gold-400 hover:bg-gold-300 text-black text-[10px] font-bold uppercase tracking-widest">Buy</button>
+                                <button onclick="toggleWishlist('${p.id}'); toggleWishlistModal()" class="text-red-400 hover:text-red-500 text-xs"><i class="fa-solid fa-trash-can"></i></button>
+                            `;
+                            container.appendChild(row);
+                        }
+                    });
+                }
+            } else {
+                modal.classList.add('hidden');
+            }
+        }
+
+        // Product Modal Details
+        function openProductModal(id) {
+            const p = products.find(prod => prod.id === id);
+            if (!p) return;
+
+            activeModalProduct = p;
+            activeModalSize = '50ml';
+
+            document.getElementById('modal-img').src = p.image;
+            document.getElementById('modal-img').alt = p.name;
+            document.getElementById('modal-collection').textContent = `${p.collection} collection`;
+            document.getElementById('modal-name').textContent = p.name;
+            document.getElementById('modal-rating').textContent = p.rating;
+            document.getElementById('modal-reviews-count').textContent = `(${p.reviewsCount} verified reviews)`;
+            document.getElementById('modal-desc').textContent = p.description;
+
+            // Notes
+            document.getElementById('modal-notes-top').textContent = p.notes.top;
+            document.getElementById('modal-notes-heart').textContent = p.notes.heart;
+            document.getElementById('modal-notes-base').textContent = p.notes.base;
+
+            // Price & Size reset buttons
+            updateModalPrice();
+
+            document.getElementById('product-modal').classList.remove('hidden');
+        }
+
+        function selectModalSize(size) {
+            activeModalSize = size;
+            const btn50 = document.getElementById('btn-size-50');
+            const btn100 = document.getElementById('btn-size-100');
+
+            if (size === '50ml') {
+                btn50.className = 'px-5 py-2.5 border border-gold-400 text-white text-xs font-bold tracking-wider rounded-none bg-gold-400/10 cursor-pointer transition-all';
+                btn100.className = 'px-5 py-2.5 border border-white/10 text-gray-400 hover:text-white text-xs font-bold tracking-wider rounded-none cursor-pointer transition-all';
+            } else {
+                btn100.className = 'px-5 py-2.5 border border-gold-400 text-white text-xs font-bold tracking-wider rounded-none bg-gold-400/10 cursor-pointer transition-all';
+                btn50.className = 'px-5 py-2.5 border border-white/10 text-gray-400 hover:text-white text-xs font-bold tracking-wider rounded-none cursor-pointer transition-all';
+            }
+
+            updateModalPrice();
+        }
+
+        function updateModalPrice() {
+            if (!activeModalProduct) return;
+            const price = activeModalSize === '100ml' ? activeModalProduct.price + 1450 : activeModalProduct.price;
+            document.getElementById('modal-price').textContent = formatPKR(price);
+        }
+
+        function addProductFromModal() {
+            if (!activeModalProduct) return;
+            addToCart(activeModalProduct.id, activeModalSize);
+            closeProductModal();
+            toggleCart(true);
+        }
+
+        function closeProductModal() {
+            document.getElementById('product-modal').classList.add('hidden');
+            activeModalProduct = null;
+        }
+
+        function quickAdd(id) {
+            addToCart(id, '50ml');
+            toggleCart(true);
+        }
+
+        // Filters Management
+        function filterCollection(col) {
+            selectedFilter = col;
+            document.querySelectorAll('.filter-tab').forEach(tab => {
+                tab.classList.remove('bg-gold-400', 'text-black');
+                tab.classList.add('bg-transparent', 'text-gray-400');
+            });
+
+            const activeTab = document.getElementById(`tab-${col}`);
+            if (activeTab) {
+                activeTab.classList.remove('bg-transparent', 'text-gray-400');
+                activeTab.classList.add('bg-gold-400', 'text-black');
+            }
+
+            renderProducts();
+        }
+
+        function handleSearch(val) {
+            searchQuery = val;
+            renderProducts();
+        }
+
+        function handleSort(val) {
+            currentSort = val;
+            renderProducts();
+        }
+
+        function clearFilters() {
+            selectedFilter = 'all';
+            searchQuery = '';
+            currentSort = 'popular';
+            document.querySelectorAll('input[type="text"]').forEach(input => input.value = '');
+            filterCollection('all');
+        }
+
+        // Copy Privilege Coupon
+        function copyCoupon(code) {
+            navigator.clipboard.writeText(code).then(() => {
+                const btnText = document.getElementById(`coupon-${code}`);
+                const orig = btnText.textContent;
+                btnText.textContent = "COPIED!";
+                setTimeout(() => {
+                    btnText.textContent = orig;
+                }, 1500);
+            });
+        }
+
+        // Checkout Dialog Trigger
+        function openCheckoutModal() {
+            toggleCart(false);
+            
+            // Build Invoice elements
+            const list = document.getElementById('checkout-invoice-items');
+            list.innerHTML = '';
+            
+            cart.forEach(item => {
+                const itemRow = document.createElement('div');
+                itemRow.className = 'flex justify-between text-gray-300';
+                itemRow.innerHTML = `
+                    <span>${item.name} (${item.size}) x${item.quantity}</span>
+                    <span>${formatPKR(item.price * item.quantity)}</span>
+                `;
+                list.appendChild(itemRow);
+            });
+
+            // Bill figures
+            const subtotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+            let discount = 0;
+            if (activePromoCode && couponCodes[activePromoCode]) {
+                const promo = couponCodes[activePromoCode];
+                if (subtotal >= promo.min) {
+                    discount = Math.round(subtotal * (promo.percent / 100));
+                }
+            }
+            const shipping = (subtotal >= 5000 || subtotal === 0) ? 0 : 250;
+            const grandTotal = subtotal - discount + shipping;
+
+            document.getElementById('checkout-subtotal').textContent = formatPKR(subtotal);
+            if (discount > 0) {
+                document.getElementById('checkout-discount-row').classList.remove('hidden');
+                document.getElementById('checkout-discount').textContent = `- ${formatPKR(discount)}`;
+            } else {
+                document.getElementById('checkout-discount-row').classList.add('hidden');
+            }
+            document.getElementById('checkout-shipping').textContent = shipping === 0 ? 'FREE' : formatPKR(shipping);
+            document.getElementById('checkout-total').textContent = formatPKR(grandTotal);
+
+            // Reset payment selection to COD on open
+            document.getElementById('checkout-payment').value = "Cash on Delivery (COD)";
+            updateCheckoutPaymentDetails();
+
+            document.getElementById('checkout-modal').classList.remove('hidden');
+        }
+
+        function updateCheckoutPaymentDetails() {
+            const payment = document.getElementById('checkout-payment').value;
+            const detailsDiv = document.getElementById('checkout-payment-details');
+            
+            if (payment === "Cash on Delivery (COD)") {
+                detailsDiv.classList.add('hidden');
+                detailsDiv.innerHTML = '';
+            } else {
+                detailsDiv.classList.remove('hidden');
+                if (payment === "EasyPaisa Mobile Wallet") {
+                    detailsDiv.innerHTML = `
+                        <span class="text-gold-400 text-[10px] font-bold uppercase tracking-wider block">⚜ EASYPAISA ACCOUNT DETAILS:</span>
+                        <p>Title: <strong>Zarbadshah Perfumes</strong><br>EasyPaisa Mobile Account Number: <strong>0344-1211053</strong></p>
+                        <span class="text-[9px] text-gray-600 block mt-1">Please take a screenshot of your transfer receipt and send it to our WhatsApp after order placement for instant verification!</span>
+                    `;
+                } else if (payment === "JazzCash Mobile Wallet") {
+                    detailsDiv.innerHTML = `
+                        <span class="text-gold-400 text-[10px] font-bold uppercase tracking-wider block">⚜ JAZZCASH ACCOUNT DETAILS:</span>
+                        <p>Title: <strong>Zarbadshah Perfumes</strong><br>JazzCash Account Number: <strong>0300-1211872</strong></p>
+                        <span class="text-[9px] text-gray-600 block mt-1">Please take a screenshot of your transfer receipt and send it to our WhatsApp after order placement for instant verification!</span>
+                    `;
+                } else if (payment === "Direct Bank Transfer") {
+                    detailsDiv.innerHTML = `
+                        <span class="text-gold-400 text-[10px] font-bold uppercase tracking-wider block">⚜ CORPORATE BANK ACCOUNT DETAILS:</span>
+                        <p>Bank: <strong>Habib Bank Limited (HBL)</strong><br>Account Title: <strong>Zarbadshah Perfumes Corporate</strong><br>Account Number: <strong>1234-56789012-03</strong><br>IBAN: <strong>PK21 HABB 1234 5678 9012 03</strong></p>
+                        <span class="text-[9px] text-gray-600 block mt-1">Please send your bank receipt to our WhatsApp after order placement for verification.</span>
+                    `;
+                }
+            }
+        }
+
+        function closeCheckoutModal() {
+            document.getElementById('checkout-modal').classList.add('hidden');
+        }
+
+        // WhatsApp Checkout Integration
+        function submitOrderViaWhatsApp() {
+            const name = document.getElementById('checkout-name').value.trim();
+            const phone = document.getElementById('checkout-phone').value.trim();
+            const city = document.getElementById('checkout-city').value.trim();
+            const address = document.getElementById('checkout-address').value.trim();
+            const payment = document.getElementById('checkout-payment').value;
+
+            if (!name || !phone || !city || !address) {
+                alert("Please complete all required fields (*) to place your order.");
+                return;
+            }
+
+            // Calculations
+            const subtotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+            let discount = 0;
+            if (activePromoCode && couponCodes[activePromoCode]) {
+                const promo = couponCodes[activePromoCode];
+                if (subtotal >= promo.min) {
+                    discount = Math.round(subtotal * (promo.percent / 100));
+                }
+            }
+            const shipping = (subtotal >= 5000 || subtotal === 0) ? 0 : 250;
+            const grandTotal = subtotal - discount + shipping;
+
+            // Formulate WhatsApp message text
+            let msg = `⚜ *NEW ORDER - HOUSE OF ZARBADSHAH* ⚜\n\n`;
+            msg += `Assalam-o-Alaikum! I would like to place an order for the following Zarbadshah Luxury perfumes:\n\n`;
+            msg += `*📜 ORDER DETAILS:*\n`;
+            
+            cart.forEach((item, index) => {
+                msg += `${index + 1}. ${item.name} (${item.size}) - x${item.quantity} [${formatPKR(item.price * item.quantity)}]\n`;
+            });
+            
+            msg += `\n*💰 BILL BREAKDOWN:*\n`;
+            msg += `• Subtotal: ${formatPKR(subtotal)}\n`;
+            if (discount > 0) msg += `• Discount (${activePromoCode}): -${formatPKR(discount)}\n`;
+            msg += `• Shipping Fee: ${shipping === 0 ? 'FREE Shipping' : formatPKR(shipping)}\n`;
+            msg += `• *Grand Total:* *${formatPKR(grandTotal)}*\n\n`;
+
+            msg += `*👤 CUSTOMER INFO:*\n`;
+            msg += `• *Name:* ${name}\n`;
+            msg += `• *Phone Number:* ${phone}\n`;
+            msg += `• *City:* ${city}\n`;
+            msg += `• *Delivery Address:* ${address}\n`;
+            msg += `• *Payment Option:* ${payment}\n\n`;
+            
+            msg += `JazakAllah! Please confirm my order and let me know the dispatch details.`;
+
+            const encoded = encodeURIComponent(msg);
+            const waUrl = `https://wa.me/923001211872?text=${encoded}`;
+            
+            // Clear cart & state upon redirect
+            cart = [];
+            saveCartState();
+            localStorage.removeItem('zb-promo');
+            activePromoCode = '';
+            closeCheckoutModal();
+            updateCartUI();
+            
+            // Redirect
+            window.open(waUrl, '_blank');
+        }
+
+        // Direct Download Exporter helper
+        function downloadStandaloneFile() {
+            const htmlContent = document.documentElement.outerHTML;
+            const blob = new Blob([htmlContent], { type: 'text/html' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'Zarbadshah_Luxury_Storefront.html';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // Initial setup on window load
+        window.onload = function() {
+            renderCampaign();
+            buildCampaignThumbnails();
+            renderProducts();
+            updateCartUI();
+            updateWishlistBadge();
+        }
+    </script>
+</body>
+</html>
