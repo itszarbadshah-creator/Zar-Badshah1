@@ -104,8 +104,20 @@ export default function ContactView() {
               </div>
               <div>
                 <strong className="text-white text-xs uppercase tracking-widest block font-medium">Headquarters</strong>
-                <p className="text-gray-400 text-xs mt-1">Lahore & Karachi, Pakistan</p>
+                <p className="text-gray-400 text-xs mt-1">Mansehra, Pakistan</p>
                 <span className="text-[10px] text-gray-500 mt-1 block">Warehouse and distribution hubs. Closed to walk-in public.</span>
+              </div>
+            </div>
+
+            {/* Balakot outlet location */}
+            <div className="flex items-start gap-4 p-5 bg-[#0A0A0A] border border-gold-400/10 rounded-none">
+              <div className="p-3 bg-gold-400/10 text-gold-400 rounded-none">
+                <MapPin className="w-5 h-5" />
+              </div>
+              <div>
+                <strong className="text-white text-xs uppercase tracking-widest block font-medium">Balakot Outlet</strong>
+                <p className="text-gray-400 text-xs mt-1">Ahsaniya Cash & Carry Balakot, Pakistan</p>
+                <span className="text-[10px] text-gray-500 mt-1 block">Walk-in physical outlet store. Browse and sample elite fragrances.</span>
               </div>
             </div>
           </div>

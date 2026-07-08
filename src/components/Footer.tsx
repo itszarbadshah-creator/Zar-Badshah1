@@ -146,7 +146,14 @@ export default function Footer({ onNavigate }: FooterProps) {
               <MapPin className="w-4 h-4 text-gold-400 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="text-white font-medium">HQ Office</p>
-                <p className="text-gray-500">Lahore / Karachi, Pakistan</p>
+                <p className="text-gray-500">Mansehra, Pakistan</p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-3 text-xs">
+              <MapPin className="w-4 h-4 text-gold-400 mt-0.5 flex-shrink-0" />
+              <div>
+                <p className="text-white font-medium">Balakot Outlet</p>
+                <p className="text-gray-500">Ahsaniya Cash & Carry Balakot, Pakistan</p>
               </div>
             </div>
           </div>

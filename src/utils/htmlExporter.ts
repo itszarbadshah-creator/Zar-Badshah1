@@ -710,7 +710,8 @@ export function downloadHtmlCatalog(products: Product[], coupons: any[]) {
     </section>
 
     <footer>
-      <p>⚜ <strong>Zarbadshah Perfumes</strong> - Lahore, Pakistan ⚜</p>
+      <p>⚜ <strong>Zarbadshah Perfumes</strong> - Mansehra, Pakistan ⚜</p>
+      <p>📍 <strong>Balakot Outlet:</strong> Ahsaniya Cash & Carry Balakot 📍</p>
       <p>All Scent Formulas are original proprietary developments. Contact: +92 300 1211872</p>
       <p>&copy; 2026 Zarbadshah Perfumes. Built with absolute royalty.</p>
     </footer>
