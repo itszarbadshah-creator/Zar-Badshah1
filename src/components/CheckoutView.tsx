@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { CreditCard, Truck, MessageSquare, Check, ShoppingBag, ShieldCheck, Tag } from 'lucide-react';
 import { CartItem, Product, PageId } from '../types';
 import { formatPKR } from '../data/products';
+import PerfumeImage from './PerfumeImage';
 import Logo from './Logo';
 
 interface CheckoutViewProps {
@@ -345,7 +346,7 @@ Please verify my order. Thank you!`;
                     <div key={`${item.product.id}-${item.selectedSize}`} className="flex items-center justify-between text-xs py-1">
                       <div className="flex items-center gap-3">
                         <div className="w-10 h-10 bg-black rounded-none overflow-hidden flex-shrink-0">
-                          <img src={item.product.image} alt={item.product.name} referrerPolicy="no-referrer" className="w-full h-full object-cover" />
+                          <PerfumeImage src={item.product.image} alt={item.product.name} fallbackTitle={item.product.name} className="w-full h-full object-cover" />
                         </div>
                         <div>
                           <p className="text-white font-medium">{item.product.name}</p>

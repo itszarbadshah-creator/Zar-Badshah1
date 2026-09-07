@@ -2,6 +2,7 @@ import React from 'react';
 import { Heart, ShoppingBag, Zap, Award } from 'lucide-react';
 import { Product } from '../types';
 import { formatPKR } from '../data/products';
+import PerfumeImage from './PerfumeImage';
 
 interface ProductCardProps {
   key?: string | number;
@@ -58,10 +59,10 @@ export default function ProductCard({
 
       {/* Product Image Stage */}
       <div className="relative aspect-square overflow-hidden bg-black flex items-center justify-center border-b border-gold-400/10">
-        <img
+        <PerfumeImage
           src={product.image}
           alt={product.name}
-          referrerPolicy="no-referrer"
+          fallbackTitle={product.name}
           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
           id={`product-card-image-${product.id}`}
         />

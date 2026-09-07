@@ -3,6 +3,7 @@ import { Heart, ShoppingBag, Zap, Minus, Plus, Star, Award, ShieldCheck, Chevron
 import { Product, Review } from '../types';
 import { formatPKR } from '../data/products';
 import ProductCard from './ProductCard';
+import PerfumeImage from './PerfumeImage';
 
 interface ProductDetailViewProps {
   product: Product;
@@ -102,10 +103,10 @@ export default function ProductDetailView({
         {/* Left Side: Product Image Display Stage */}
         <div className="space-y-4">
           <div className="relative bg-black border border-gold-400/20 rounded-none overflow-hidden aspect-square flex items-center justify-center shadow-2xl">
-            <img
+            <PerfumeImage
               src={product.image}
               alt={product.name}
-              referrerPolicy="no-referrer"
+              fallbackTitle={product.name}
               className="w-full h-full object-cover"
               id="product-detail-hero-image"
             />
@@ -495,10 +496,10 @@ export default function ProductDetailView({
                   id={`recent-view-card-${p.id}`}
                 >
                   <div className="aspect-square bg-black overflow-hidden rounded-none mb-3">
-                    <img 
+                    <PerfumeImage 
                       src={p.image} 
                       alt={p.name} 
-                      referrerPolicy="no-referrer"
+                      fallbackTitle={p.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
                     />
                   </div>

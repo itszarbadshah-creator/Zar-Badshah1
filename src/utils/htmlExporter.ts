@@ -9,7 +9,12 @@ export function downloadHtmlCatalog(products: Product[], coupons: any[]) {
 
   // Generate HTML content for products
   const productsHtml = products.map(product => {
-    const imageUrl = product.image.startsWith('http') ? product.image : `${origin}${product.image}`;
+    const filename = product.image.split('/').pop();
+    const primarySrc = product.image;
+    const relativeSrc = `src/assets/images/${filename}`;
+    const assetsSrc = `assets/images/${filename}`;
+    const publicSrc = `public/src/assets/images/${filename}`;
+    const fallbackAbsolute = product.image.startsWith('http') ? product.image : `${origin}${product.image}`;
     
     // Notes badges
     const topNotes = product.notes.top.map(n => `<span class="note-badge">${n}</span>`).join('');
@@ -28,7 +33,12 @@ export function downloadHtmlCatalog(products: Product[], coupons: any[]) {
     return `
       <div class="product-card" data-collection="${product.collection}" data-featured="${product.isFeatured ? 'true' : 'false'}" data-bestseller="${product.isBestSeller ? 'true' : 'false'}">
         <div class="image-container">
-          <img src="${imageUrl}" alt="${product.name}" loading="lazy" />
+          <img 
+            src="${primarySrc}" 
+            alt="${product.name}" 
+            loading="lazy" 
+            onerror="if(!this.dataset.retry){this.dataset.retry='1';this.src='${relativeSrc}';}else if(this.dataset.retry==='1'){this.dataset.retry='2';this.src='${assetsSrc}';}else if(this.dataset.retry==='2'){this.dataset.retry='3';this.src='${publicSrc}';}else if(this.dataset.retry==='3'){this.dataset.retry='4';this.src='${fallbackAbsolute}';}"
+          />
           ${product.isBestSeller ? '<span class="status-badge bestseller">BEST SELLER</span>' : ''}
           ${product.isFeatured && !product.isBestSeller ? '<span class="status-badge featured">FEATURED</span>' : ''}
         </div>

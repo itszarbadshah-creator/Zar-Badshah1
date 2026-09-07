@@ -4,6 +4,7 @@ import { Product, PageId } from '../types';
 import { HERO_IMAGE, formatPKR, coupons } from '../data/products';
 import { downloadHtmlCatalog } from '../utils/htmlExporter';
 import ProductCard from './ProductCard';
+import PerfumeImage from './PerfumeImage';
 import Logo from './Logo';
 
 interface HomeViewProps {
@@ -178,10 +179,10 @@ export default function HomeView({
         
         {/* Background Image with Deep Dark Overlay */}
         <div className="absolute inset-0 z-0">
-          <img
+          <PerfumeImage
             src={HERO_IMAGE}
             alt="Zarbadshah Perfumes Hero"
-            referrerPolicy="no-referrer"
+            fallbackTitle="Zarbadshah Imperial Scent"
             className="w-full h-full object-cover opacity-60 scale-105 filter brightness-[0.7] transition-all duration-1000"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
@@ -279,10 +280,10 @@ export default function HomeView({
               id="category-card-men"
             >
               <div className="absolute top-6 left-6 font-display text-6xl font-bold text-gold-400/10 z-20 select-none group-hover:text-gold-400/25 transition-all duration-500">01</div>
-              <img 
+              <PerfumeImage 
                 src={products.find(p => p.id === 'white-oud')?.image || HERO_IMAGE}
                 alt="Men's Perfume Collection"
-                referrerPolicy="no-referrer"
+                fallbackTitle="Men's Collection"
                 className="w-full h-full object-cover opacity-60 group-hover:opacity-50 transition-all duration-700 ease-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent" />
@@ -307,10 +308,10 @@ export default function HomeView({
               id="category-card-women"
             >
               <div className="absolute top-6 left-6 font-display text-6xl font-bold text-gold-400/10 z-20 select-none group-hover:text-gold-400/25 transition-all duration-500">02</div>
-              <img 
+              <PerfumeImage 
                 src={products.find(p => p.id === 'laila')?.image || HERO_IMAGE}
                 alt="Women's Perfume Collection"
-                referrerPolicy="no-referrer"
+                fallbackTitle="Women's Collection"
                 className="w-full h-full object-cover opacity-60 group-hover:opacity-50 transition-all duration-700 ease-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent" />
@@ -335,10 +336,10 @@ export default function HomeView({
               id="category-card-unisex"
             >
               <div className="absolute top-6 left-6 font-display text-6xl font-bold text-gold-400/10 z-20 select-none group-hover:text-gold-400/25 transition-all duration-500">03</div>
-              <img 
+              <PerfumeImage 
                 src={products.find(p => p.id === 'dream')?.image || HERO_IMAGE}
                 alt="Unisex Perfume Collection"
-                referrerPolicy="no-referrer"
+                fallbackTitle="Unisex Collection"
                 className="w-full h-full object-cover opacity-60 group-hover:opacity-50 transition-all duration-700 ease-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent" />
@@ -379,10 +380,10 @@ export default function HomeView({
             {/* Left Column: Interactive Poster Viewport */}
             <div className="lg:col-span-5 h-[480px] sm:h-[580px] relative overflow-hidden group border border-gold-400/20">
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-500 z-10" />
-              <img 
+              <PerfumeImage 
                 src={campaigns[activeCampaignIdx].image} 
                 alt={campaigns[activeCampaignIdx].title} 
-                referrerPolicy="no-referrer"
+                fallbackTitle={campaigns[activeCampaignIdx].title}
                 className="w-full h-full object-cover opacity-90 transition-all duration-700 group-hover:scale-105"
                 key={activeCampaignIdx}
               />
@@ -471,10 +472,10 @@ export default function HomeView({
                     boxShadow: activeCampaignIdx === idx ? `0 0 15px ${camp.themeColor}33` : undefined
                   }}
                 >
-                  <img 
+                  <PerfumeImage 
                     src={camp.image} 
                     alt={camp.title} 
-                    referrerPolicy="no-referrer"
+                    fallbackTitle={camp.title}
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-black/40" />
@@ -623,10 +624,10 @@ export default function HomeView({
                 className="group relative aspect-square bg-[#0A0A0A] overflow-hidden rounded-none border border-gold-400/10 hover:border-gold-400/40 transition-all duration-300"
                 id={`ig-photo-item-${index}`}
               >
-                <img 
+                <PerfumeImage 
                   src={p.image} 
                   alt={`Zarbadshah Perfume Visual ${index}`} 
-                  referrerPolicy="no-referrer"
+                  fallbackTitle={p.name}
                   className="w-full h-full object-cover opacity-60 group-hover:opacity-50 transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">

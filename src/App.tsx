@@ -48,7 +48,15 @@ export default function App() {
       const storedWish = localStorage.getItem('zarbadshah_wishlist');
       const storedRecent = localStorage.getItem('zarbadshah_recent');
 
-      if (storedCart) setCartItems(JSON.parse(storedCart));
+      if (storedCart) {
+        const parsed: CartItem[] = JSON.parse(storedCart);
+        // Refresh product references to guarantee fresh image paths
+        const refreshedCart = parsed.map(item => {
+          const fresh = products.find(p => p.id === item.product.id);
+          return fresh ? { ...item, product: fresh } : item;
+        });
+        setCartItems(refreshedCart);
+      }
       if (storedWish) setWishlistIds(JSON.parse(storedWish));
       
       if (storedRecent) {

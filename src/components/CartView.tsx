@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { ShoppingBag, Heart, Trash2, ArrowRight, Sparkles, Tag, ShieldCheck, Minus, Plus } from 'lucide-react';
 import { CartItem, WishlistItem, Product, PageId } from '../types';
 import { coupons, formatPKR } from '../data/products';
+import PerfumeImage from './PerfumeImage';
 
 interface CartViewProps {
   cartItems: CartItem[];
@@ -117,10 +118,10 @@ export default function CartView({
                     {/* Item details */}
                     <div className="flex items-center gap-4 w-full sm:w-auto">
                       <div className="w-16 h-16 sm:w-20 sm:h-20 bg-black rounded-none overflow-hidden border border-gold-400/20 flex-shrink-0 cursor-pointer" onClick={() => onSelectProduct(item.product.id)}>
-                        <img 
+                        <PerfumeImage 
                           src={item.product.image} 
                           alt={item.product.name} 
-                          referrerPolicy="no-referrer"
+                          fallbackTitle={item.product.name}
                           className="w-full h-full object-cover" 
                         />
                       </div>
@@ -310,10 +311,10 @@ export default function CartView({
 
                 {/* Scent Image */}
                 <div className="aspect-square bg-neutral-950 overflow-hidden cursor-pointer" onClick={() => onSelectProduct(item.product.id)}>
-                  <img 
+                  <PerfumeImage 
                     src={item.product.image} 
                     alt={item.product.name} 
-                    referrerPolicy="no-referrer"
+                    fallbackTitle={item.product.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                   />
                 </div>
